@@ -38,45 +38,42 @@
     <p class="page-main__call-to-action">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="form__header personal-info">
-        <label class="personal-info__cat-name">ИМЯ:*<input type="text" name="cat-name" placeholder="Барсик"
+      <div class="form__cat-info">
+        <label class="form__label">ИМЯ:*<input class="form__input" type="text" name="cat-name" placeholder="Барсик"
             required></label>
-        <label class="personal-info__cat-weight">Вес (кг):*<input type="number" placeholder="7" required></label>
-        <label class="personal-info__cat-age">Возраст (лет):<input type="number" placeholder="7"></label>
-        <fieldset class="form__radio-buttons radio-buttons">
-          <label class="radio-buttons__label">Похудение<input class="radio-buttons__item radio-buttons__item--active"
-              type="radio" name="program-goal" value="Похудение" checked></label>
-          <label class="radio-buttons__label">Набор массы<input class="radio-buttons__item" type="radio"
-              name="program-goal" value="Набор массы"></label>
-          <label class="radio-buttons__label">Не знаю (Нужен ваш совет)<input class="radio-buttons__item" type="radio"
-              name="program-goal" value="Не знаю (Нужен ваш совет)"></label>
-        </fieldset>
+        <label class="form__label">Вес (кг):*<input class="form__input" type="number" placeholder="7" required></label>
+        <label class="form__label">Возраст (лет):<input class="form__input" type="number" placeholder="7"></label>
+        <label class="form__label radio-label">Похудение<input class="form__input form__input--active radio-button"
+            type="radio" name="program-goal" value="Похудение" checked></label>
+        <label class="form__label radio-label">Набор массы<input class="form__input radio-button" type="radio"
+            name="program-goal" value="Набор массы"></label>
+        <label class="form__label radio-label">Не знаю (Нужен ваш совет)<input class="form__input radio-button"
+            type="radio" name="program-goal" value="Не знаю (Нужен ваш совет)"></label>
       </div>
 
-      <div class="form__contacts contacts">
-        <h2 class="contacts__title form-subtitle">Контактные данные
+      <div class="form__contacts">
+        <h2 class="form__subtitle">Контактные данные
           (владельца кота)</h2>
-        <label class="contacts__email">E-mail:*<input type="email" placeholder="kuklachev@gmail.com" required></label>
-        <label class="contacts__phone">Телефон:*<input type="tel" placeholder="8 (960) 900-60-90" required></label>
+        <label class="form__label">E-mail:*<input class="form__input" type="email" placeholder="kuklachev@gmail.com"
+            required></label>
+        <label class="form__label">Телефон:*<input class="form__input" type="tel" placeholder="8 (960) 900-60-90"
+            required></label>
       </div>
 
-      <div class="form__comments comments">
-        <h2 class="comments__title form-subtitle">Комментарий</h2>
-        <label class="visually-hidden">Повадки кота.<textarea class="comments__textarea"
+      <div class="form__comments">
+        <h2 class="form__subtitle">Комментарий</h2>
+        <label class="visually-hidden">Повадки кота.<textarea class="form__input textarea"
             placeholder="Расскажите обо всех повадках кота"></textarea></label>
       </div>
 
-      <div class="form__additional-products additional-products">
-        <h2 class="additional-products__title form-subtitle">Дополнительно</h2>
-        <label class="additional-products__item-name">Сахарозаменитель<input
-            class="additional-products__item-input additional-products__item-input--active" type="checkbox"
-            checked></label>
-        <label class="additional-products__item-name">Питьевая вода<input class="additional-products__item-input"
+      <div class="form__additional-products">
+        <h2 class="form__subtitle">Дополнительно</h2>
+        <label class="form__label checkbox-label">Сахарозаменитель<input
+            class="form__input form__input--active checkbox" type="checkbox" checked></label>
+        <label class="form__label checkbox-label">Питьевая вода<input class="form__input checkbox"
             type="checkbox"></label>
-        <label class="additional-products__item-name">Молоко<input class="additional-products__item-input"
-            type="checkbox"></label>
-        <label class="additional-products__item-name">Витамины<input class="additional-products__item-input"
-            type="checkbox"></label>
+        <label class="form__label checkbox-label">Молоко<input class="form__input checkbox" type="checkbox"></label>
+        <label class="form__label checkbox-label">Витамины<input class="form__input checkbox" type="checkbox"></label>
       </div>
       <button class="form__button button" type="submit">Отправить заявку</button>
     </form>
