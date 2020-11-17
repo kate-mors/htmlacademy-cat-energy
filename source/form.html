@@ -12,7 +12,11 @@
       <img class="page-header__image-icon logo-image" src="https://via.placeholder.com/150x150" width="33" height="38"
         alt="Логотип сайта Cat energy.">
     </a>
+<<<<<<< HEAD
     <a class="page-header__text-logo">
+=======
+    <a class="page-header__text-logo" href="index.html">
+>>>>>>> 13b00f47b5658199e267653147279f2206d83e42
       <img class="page-header__image-text logo-text" src="https://via.placeholder.com/150x150" width="101" height="18"
         alt="На главную страницу сайта Cat energy.">
     </a>
@@ -28,12 +32,17 @@
           <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item main-nav__item--active">
+<<<<<<< HEAD
           <a href="#">Подбор программы</a>
+=======
+          <a>Подбор программы</a>
+>>>>>>> 13b00f47b5658199e267653147279f2206d83e42
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
+<<<<<<< HEAD
     <div class="page-main__wrapper">
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__call-to-action">Заполните анкету, и мы подберем
@@ -94,6 +103,55 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts contacts">
+=======
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__call-to-action">Заполните анкету, и мы подберем
+      программу питания для вашего кота</p>
+    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="form__cat-info">
+        <label class="form__label">ИМЯ:*<input class="form__input" type="text" name="cat-name" placeholder="Барсик"
+            required></label>
+        <label class="form__label">Вес (кг):*<input class="form__input" type="number" placeholder="7" required></label>
+        <label class="form__label">Возраст (лет):<input class="form__input" type="number" placeholder="7"></label>
+        <label class="form__label radio-label">Похудение<input class="form__input form__input--active radio-button"
+            type="radio" name="program-goal" value="Похудение" checked></label>
+        <label class="form__label radio-label">Набор массы<input class="form__input radio-button" type="radio"
+            name="program-goal" value="Набор массы"></label>
+        <label class="form__label radio-label">Не знаю (Нужен ваш совет)<input class="form__input radio-button"
+            type="radio" name="program-goal" value="Не знаю (Нужен ваш совет)"></label>
+      </div>
+
+      <div class="form__contacts">
+        <h2 class="form__subtitle">Контактные данные
+          (владельца кота)</h2>
+        <label class="form__label">E-mail:*<input class="form__input" type="email" placeholder="kuklachev@gmail.com"
+            required></label>
+        <label class="form__label">Телефон:*<input class="form__input" type="tel" placeholder="8 (960) 900-60-90"
+            required></label>
+      </div>
+
+      <div class="form__comments">
+        <h2 class="form__subtitle">Комментарий</h2>
+        <label class="visually-hidden">Повадки кота.<textarea class="form__input form__input--textarea"
+            placeholder="Расскажите обо всех повадках кота"></textarea></label>
+      </div>
+
+      <div class="form__additional-products">
+        <h2 class="form__subtitle">Дополнительно</h2>
+        <label class="form__label checkbox-label">Сахарозаменитель<input
+            class="form__input form__input--active checkbox" type="checkbox" checked></label>
+        <label class="form__label checkbox-label">Питьевая вода<input class="form__input checkbox"
+            type="checkbox"></label>
+        <label class="form__label checkbox-label">Молоко<input class="form__input checkbox" type="checkbox"></label>
+        <label class="form__label checkbox-label">Витамины<input class="form__input checkbox" type="checkbox"></label>
+      </div>
+      <button class="form__button button" type="submit">Отправить заявку</button>
+    </form>
+    <p class="page-main__comment">* — Обязательные поля</p>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__contacts page-footer__contacts--contrast-background contacts">
+>>>>>>> 13b00f47b5658199e267653147279f2206d83e42
       <p class="contacts__call-to-action">приглашаем
         к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая
