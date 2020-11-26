@@ -44,6 +44,8 @@
             required></label>
         <label class="form__label">Вес (кг):*<input class="form__input" type="number" placeholder="7" required></label>
         <label class="form__label">Возраст (лет):<input class="form__input" type="number" placeholder="7"></label>
+      </div>
+      <div class="form__radio-labels">
         <label class="form__label radio-label">Похудение<input class="form__input form__input--active radio-button"
             type="radio" name="program-goal" value="Похудение" checked></label>
         <label class="form__label radio-label">Набор массы<input class="form__input radio-button" type="radio"
@@ -63,8 +65,9 @@
 
       <div class="form__comments">
         <h2 class="form__subtitle">Комментарий</h2>
-        <label class="visually-hidden">Повадки кота.<textarea class="form__input form__input--textarea"
-            placeholder="Расскажите обо всех повадках кота"></textarea></label>
+        <label class="visually-hidden" for="comments-textarea">Повадки кота.</label>
+        <textarea class="form__input form__input--textarea" id="comments-textarea"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
 
       <div class="form__other-products">
