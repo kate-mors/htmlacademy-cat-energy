@@ -1,0 +1,54 @@
+.form__label {
+  font-family: @font-oswald;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  margin: 0;
+  padding: 0;
+  font-family: @font-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid @special-light-grey;
+
+  &::placeholder {
+    color: @special-dark-grey;
+    opacity: 1;
+  }
+
+  &:hover {
+    border: 1px solid @special-grey;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid @special-dark-grey;
+    outline-offset: -2px;
+  }
+
+  &:not(:placeholder-shown):invalid:required {
+    outline: 2px solid @status-error;
+    outline-offset: -2px;
+  }
+}
+
+.radio-label {
+  color: @special-dark-grey-2;
+}
+
+.checkbox-label {
+  color: @basic-black;
+}
+
+.form__subtitle {
+  font-family: @font-oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: @basic-black;
+}
