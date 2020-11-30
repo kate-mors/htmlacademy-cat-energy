@@ -1,13 +1,23 @@
 .page-main__title {
+  margin: 0;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
+  outline: 3px solid #ff8282;
+  outline-offset: -3px;
 
   &--contrast {
     color: @basic-white;
     text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @basic-black;
   }
 }
 
