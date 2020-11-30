@@ -33,17 +33,19 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
-
-    &--active {
-      border-bottom: 2px solid @basic-green;
-    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
 
-    &--active {
+  &--active {
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid @basic-green;
+    }
+
+    @media (min-width: @desktop-width) {
       border-bottom: 2px solid @basic-white;
     }
   }
