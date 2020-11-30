@@ -1,20 +1,62 @@
-.programs__list {
+.programs {
   margin: 0;
+  outline: 3px solid #000000;
+  outline-offset: -3px;
+}
+
+.programs__list {
+  margin: 0 20px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   list-style: none;
+
+  outline: 3px solid #68b738;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
+  min-height: 266px;
+  margin-top: 20px;
   background-color: @basic-grey;
+
+  outline: 3px solid #ff8282;
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 372px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 47%;
+    min-height: 374px;
+    margin-top: 0;
+  }
 }
 
 .programs__title {
+  margin: 0;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: @basic-black;
+}
+
+.programs__text {
+  margin: 0;
 }
 
 .programs__link {
