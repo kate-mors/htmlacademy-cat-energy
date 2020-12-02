@@ -1,4 +1,27 @@
+.catalog-item {
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image data-table"
+    "button button";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.catalog-item__image {
+  grid-area: image;
+}
+
 .catalog-item__title {
+  grid-area: title;
   font-family: @font-oswald;
   font-weight: normal;
   font-size: 16px;
@@ -7,8 +30,13 @@
   color: @special-dark-grey-2;
 }
 
+.catalog-item__data-table {
+  grid-area: data-table;
+}
+
 .catalog-item__button {
   margin: 0;
+  grid-area: button;
   border: none;
   box-shadow: none;
 }

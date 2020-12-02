@@ -1,18 +1,92 @@
 .contacts {
+  width: 100%;
+  min-height: 476px;
+  display: grid;
+  grid-template-areas:
+    "contacts__top contacts__top"
+    "map map"
+    "map map"
+    "map map";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  outline: 4px solid #68b738;
+  outline-offset: -4px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 600px;
+    grid-template-areas:
+      "contacts__top contacts__top"
+      "map map"
+      "map map";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 400px;
+    display: block;
+    position: relative;
+  }
+
   &--contrast-background {
     background-color: @basic-grey;
   }
 }
 
+.contacts__top {
+  min-height: 104px;
+  margin: 0 20px;
+  grid-area: contacts__top;
+  display: flex;
+
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+    margin: 0 71px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+}
+
 .contacts__call-to-action {
+  width: 50%;
+  margin: 0;
   font-family: @font-oswald;
   font-size: 16px;
   text-transform: uppercase;
   color: @special-black;
+
+  outline: 5px solid #68b738;
+  outline-offset: -5px;
 }
 
 .contacts__address {
+  width: 50%;
+  margin: 0;
   line-height: 20px;
+
+  outline: 5px solid #68b738;
+  outline-offset: -5px;
+}
+
+.contacts__map-area {
+  width: 100%;
+  min-height: 400px;
+  grid-area: map;
+
+  outline: 6px solid rgba(49, 15, 241, 0.8);
+  outline-offset: -6px;
 }
 
 .contacts__map {

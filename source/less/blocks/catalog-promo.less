@@ -1,21 +1,38 @@
 .catalog-promo {
   min-height: 289px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: url("../../img/gift-photo-mobile.png") 0% 50% no-repeat;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
     min-height: 200px;
+    margin: 0 30px;
+    flex-direction: row;
+    justify-content: space-around;
     background: url("../../img/gift-photo-tablet.png") no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 289px;
+    margin: 0;
+    margin-top: 116px;
+    margin-bottom: 86px;
   }
 }
 
 .catalog-promo__text {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }

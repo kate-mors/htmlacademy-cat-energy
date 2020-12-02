@@ -1,5 +1,30 @@
 .footer-bottom {
+  width: 100%;
+  min-height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: @basic-grey;
+
+  @media (min-width: @tablet-width) {
+    min-height: 150px;
+    flex-direction: row;
+  }
+}
+
+.footer-bottom__logo {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 110px;
+  }
 }
 
 .footer-bottom__social-list {
@@ -9,7 +34,18 @@
 }
 
 .footer-bottom__copyright {
+  margin: 0 20px;
   font-size: 16px;
   text-decoration: none;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-right: 110px;
+  }
 }
