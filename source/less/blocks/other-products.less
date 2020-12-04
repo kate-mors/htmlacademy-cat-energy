@@ -1,6 +1,6 @@
 .other-products {
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid #ff8282;
+  outline-offset: -1px;
 
   @media (min-width: @desktop-width) {
     grid-column: 1 / span 3;
@@ -8,24 +8,24 @@
 }
 
 .other-products__title {
-  margin: 0 20px;
+  margin: 25px 20px 36px 20px;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: @basic-black;
 
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid #ff8282;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    margin: 9px 0 80px 67px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: 13px 0 81px 0;
   }
 }
 
@@ -33,33 +33,22 @@
   min-height: 518px;
   margin: 0 20px;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   list-style: none;
-
-  outline: 3px solid #68b738;
-  outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
     margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 288px;
     margin: 0;
   }
 }
 
 .other-products__item {
   min-height: 98px;
-  display: flex;
-  flex-direction: column;
 
-  outline: 3px solid #68b738;
-  outline-offset: -3px;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  @media (min-width: @desktop-width) {
+    min-height: 70px;
   }
 }

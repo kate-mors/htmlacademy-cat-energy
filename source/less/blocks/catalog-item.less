@@ -1,44 +1,89 @@
 .catalog-item {
-  display: grid;
-  grid-template-areas:
-    "image title"
-    "image data-table"
-    "button button";
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     background-image: linear-gradient(@basic-white, @basic-white 80px, @basic-grey 81px, @basic-grey 430px);
   }
 }
 
 .catalog-item__image {
-  grid-area: image;
+  width: 50%;
+  margin-top: 19px;
+
+  outline: 1px solid rgba(49, 15, 241, 0.8);
+  outline-offset: -1px;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    margin: 8px auto 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 196px;
+    margin: 0 auto;
+  }
+}
+
+.catalog-item__info {
+  width: 50%;
+  margin-top: 19px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 251px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 180px;
+    margin: 0 auto;
+  }
 }
 
 .catalog-item__title {
-  grid-area: title;
+  margin: 0 0 18px 0;
   font-family: @font-oswald;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: @special-dark-grey-2;
+
+  @media (min-width: @tablet-width) {
+    margin: 34px 0 21px 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 46px 0 21px 0;
+    line-height: 21px;
+  }
 }
 
 .catalog-item__data-table {
-  grid-area: data-table;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .catalog-item__button {
-  margin: 0;
-  grid-area: button;
+  min-width: 100%;
+  margin: 13px 0 25px 0;
+  padding: 10px 44px;
   border: none;
   box-shadow: none;
+
+  @media (min-width: @tablet-width) {
+    min-width: 248px;
+    margin: 33px 0 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 168px;
+  }
 }

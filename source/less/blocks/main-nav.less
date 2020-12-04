@@ -7,20 +7,19 @@
 }
 
 .main-nav__list {
-  min-height: 198px;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   list-style: none;
+  text-align: center;
 
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid rgba(49, 15, 241, 0.8);
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    min-height: 36px;
-    flex-direction: row;
+    margin: 42px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,6 +28,7 @@
 }
 
 .main-nav__item {
+  margin: 22px auto 24px auto;
   font-family: @font-oswald;
   font-weight: 500;
   font-size: 20px;
@@ -39,6 +39,7 @@
   outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     font-size: 18px;
     line-height: 24px;
   }

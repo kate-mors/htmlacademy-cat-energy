@@ -1,6 +1,6 @@
 .contacts {
   width: 100%;
-  min-height: 476px;
+  min-height: 460px;
   display: grid;
   grid-template-areas:
     "contacts__top contacts__top"
@@ -10,8 +10,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 
-  outline: 4px solid #68b738;
-  outline-offset: -4px;
+  outline: 1px solid #68b738;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     min-height: 600px;
@@ -35,27 +35,42 @@
 }
 
 .contacts__top {
-  min-height: 104px;
-  margin: 0 20px;
+  height: 64px;
+  margin: 42px 19px 7px 19px;
   grid-area: contacts__top;
   display: flex;
+  align-items: center;
 
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
+  outline: 1px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    min-height: 200px;
-    margin: 0 71px;
+    min-height: 74px;
+    margin: 65px 72px 61px 71px;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: 40%;
+    min-width: 570px;
+    min-height: 200px;
     margin: 0;
     display: block;
     position: absolute;
     top: 95px;
     left: 110px;
+  }
+}
+
+.contacts__wrapper {
+  outline: 1px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -1px;
+
+  @media (min-width: @desktop-width) {
+    min-height: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -67,8 +82,14 @@
   text-transform: uppercase;
   color: @special-black;
 
-  outline: 5px solid #68b738;
-  outline-offset: -5px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 80px 0 76px;
+  }
 }
 
 .contacts__address {
@@ -76,13 +97,20 @@
   margin: 0;
   line-height: 20px;
 
-  outline: 5px solid #68b738;
-  outline-offset: -5px;
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    min-width: 245px;
+    text-align: left;
+  }
 }
 
 .contacts__map-area {
   width: 100%;
-  min-height: 400px;
+  min-height: 362px;
   grid-area: map;
 
   outline: 6px solid rgba(49, 15, 241, 0.8);
