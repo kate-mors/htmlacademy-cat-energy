@@ -13,14 +13,16 @@
 
 .catalog-item__image {
   width: 50%;
+  height: 112px;
   margin-top: 19px;
+  object-fit: contain;
 
   outline: 1px solid rgba(49, 15, 241, 0.8);
   outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     height: 200px;
-    margin: 8px auto 0 auto;
+    margin: 8px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,7 +47,7 @@
 }
 
 .catalog-item__title {
-  margin: 0 0 18px 0;
+  margin: 0 40% 18px 0;
   font-family: @font-oswald;
   font-weight: normal;
   font-size: 16px;
@@ -54,14 +56,16 @@
   color: @special-dark-grey-2;
 
   @media (min-width: @tablet-width) {
-    margin: 34px 0 21px 0;
+    max-width: 154px;
+    margin: 34px auto 21px auto;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 46px 0 21px 0;
+    max-width: 145px;
+    margin: 46px auto 21px auto;
     line-height: 21px;
   }
 }

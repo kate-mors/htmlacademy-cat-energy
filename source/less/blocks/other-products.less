@@ -1,10 +1,6 @@
 .other-products {
   outline: 1px solid #ff8282;
   outline-offset: -1px;
-
-  @media (min-width: @desktop-width) {
-    grid-column: 1 / span 3;
-  }
 }
 
 .other-products__title {
@@ -25,30 +21,117 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 13px 0 81px 0;
+    margin: 13px 0 81px 110px;
+  }
+}
+
+.other-products__list-promo {
+  margin: 0 20px 35px 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 76px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px 86px 110px;
+    display: flex;
   }
 }
 
 .other-products__list {
   min-height: 518px;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   list-style: none;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 30px;
-  }
 
   @media (min-width: @desktop-width) {
     min-height: 288px;
     margin: 0;
+    flex-grow: 1;
   }
 }
 
 .other-products__item {
-  min-height: 98px;
+  min-height: 129px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 139px;
+  }
 
   @media (min-width: @desktop-width) {
-    min-height: 70px;
+    min-height: 72px;
+  }
+}
+
+.other-products__promo {
+  height: 289px;
+  margin: 39px 0 0 0;
+  background: url("../../img/gift-photo-mobile.png") no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    margin: 69px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../../img/gift-photo-tablet.png") no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 245px;
+    height: 289px;
+    margin: 0 0 0 79px;
+    flex-grow: 1;
+    display: block;
+    background: url("../../img/gift-photo-desktop.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.other-products__promo-text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: @basic-white;
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    margin: 58px 0 48px 0;
+    display: block;
+    background-image: url("../../img/svg/icon-gift.svg");
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 82px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 56px 0 46px 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: auto 124px auto 78px;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
   }
 }
