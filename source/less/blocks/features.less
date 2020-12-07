@@ -1,7 +1,7 @@
 .features {
   margin: 0 20px;
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid #ff8282;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     margin: 0 30px;
@@ -22,29 +22,29 @@
 }
 
 .features__list {
-  min-height: 300px;
-  margin: 0;
+  margin: 38px 0 0 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   list-style: none;
 
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid #68b738;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
   }
 }
 
 .features__item {
-  width: 100%;
-  min-height: 60px;
+  height: 60px;
+  margin: 0 0 20px 0;
 
-  outline: 3px solid #68b738;
-  outline-offset: -3px;
+  &:last-child {
+    margin-bottom: 42px;
+  }
+
+  outline: 1px solid #111111;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     width: 46%;
@@ -59,4 +59,19 @@
 
 .features__description {
   margin: 0;
+  padding: 3px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-color: #68b738;
+  }
 }
