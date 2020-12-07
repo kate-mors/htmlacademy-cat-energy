@@ -1,5 +1,15 @@
+.page-main {
+  background: url("../../img/index-bg-promo.png") no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+}
+
 .page-main__title {
-  margin: 27px 0 41px 20px;
+  margin: 27px 20px 41px 20px;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 36px;
@@ -21,7 +31,9 @@
   }
 
   &--contrast {
-    color: @basic-white;
+    margin: 0 auto 0 auto;
+    padding-top: 27px;
+    color: #ff8282;
     text-align: center;
   }
 }

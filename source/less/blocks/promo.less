@@ -1,16 +1,14 @@
 .promo {
+  min-height: 480px;
   margin: 0;
-  background: @basic-green url("../../img/index-bg-promo.png") no-repeat;
-  background-blend-mode: soft-light;
-
-  outline: 1px solid #ff8282;
-  outline-offset: -1px;
 }
 
 .promo__wrapper {
-  margin: 0 20px;
+  margin: 25px 20px 0 20px;
   padding: 0;
-  outline: 1px solid rgba(49, 15, 241, 0.8);
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid #ff8282;
   outline-offset: -1px;
 }
 
@@ -28,4 +26,9 @@
   padding: 14px 26px;
   font-size: 14px;
   line-height: 18px;
+  order: 1;
+}
+
+.promo__product-image {
+  margin: 29px 0 3px 0;
 }

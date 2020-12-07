@@ -1,6 +1,6 @@
 .page-header {
   min-height: 66px;
-  margin: 0 20px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     min-height: 100px;
@@ -16,8 +16,7 @@
 }
 
 .page-header__logo {
-  margin: 0;
-
+  margin: 0 20px;
   outline: 1px solid #ff8282;
   outline-offset: -1px;
 
@@ -31,7 +30,7 @@
 }
 
 .page-header__text-logo {
-  outline: 1px solid rgba(49, 15, 241, 0.8);
+  outline: 1px solid @basic-green;
   outline-offset: -1px;
 
   &:hover {
@@ -44,7 +43,7 @@
 }
 
 .page-header__icon-logo {
-  outline: 1px solid rgba(49, 15, 241, 0.8);
+  outline: 1px solid @basic-green;
   outline-offset: -1px;
 
   &:hover {
@@ -58,7 +57,7 @@
 
 .page-header__nav {
   margin: 0;
-  outline: 1px solid #68b738;
+  outline: 1px solid #ff8282;
   outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
