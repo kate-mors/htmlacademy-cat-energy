@@ -1,7 +1,8 @@
 .page-main {
-  background: url("../../img/index-bg-promo.png") no-repeat;
-  background-position: 0 0;
-  background-size: contain;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, @basic-white 302px, @basic-white 100%), url("../../img/index-bg-promo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -33,8 +34,12 @@
   &--contrast {
     margin: 0 auto 0 auto;
     padding-top: 27px;
-    color: #ff8282;
+    color: @basic-white;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+      color: @basic-black;
+    }
   }
 }
 

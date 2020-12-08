@@ -61,6 +61,11 @@
   outline: 1px solid #68b738;
   outline-offset: -1px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -76,6 +81,16 @@
   margin: 0 20px;
   padding: 0 0 23px 0;
   border-bottom: 1px solid @special-light-grey-4;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 52px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+
+    outline: 1px solid #68b738;
+    outline-offset: -1px;
+  }
 }
 
 .programs__link {
@@ -89,17 +104,37 @@
   text-transform: uppercase;
   color: @basic-black;
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: @tablet-width) {
+    padding: 25px 0 53px 52px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &::after {
     content: "";
     display: block;
-    width: 24px;
+    width: 30px;
     height: 12px;
     flex-shrink: 0;
     margin-left: 15px;
     background: url("../../img/svg/icon-arrow.svg") no-repeat;
+  }
+
+  &:hover,
+  &:active {
+    &::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 12px;
+      flex-shrink: 0;
+      margin-left: 15px;
+      background: url("../../img/svg/icon-arrow-activ.svg") no-repeat;
+
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
