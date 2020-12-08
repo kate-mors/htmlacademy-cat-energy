@@ -7,7 +7,7 @@
     margin: 81px 0 0 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     border: 2px solid @basic-grey;
   }
@@ -58,11 +58,11 @@
 }
 
 .show-more__button {
-  min-width: 100%;
+  width: 100%;
   margin-top: 21px;
 
   @media (min-width: @tablet-width) {
-    min-width: 249px;
+    width: ~"calc(100% - 75px)";
     margin: 87px 36px 38px 35px;
     padding: 10px 44px;
     line-height: 20px;

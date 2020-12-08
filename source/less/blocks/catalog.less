@@ -35,7 +35,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 324px;
+    min-width: ~"calc(50% - 30px)";
     min-height: 511px;
     margin: 0 0 59px 60px;
     border: none;
@@ -43,10 +43,6 @@
 
     &:last-child {
       border: none;
-    }
-
-    &:first-child {
-      margin-left: 0;
     }
 
     &:nth-child(2n+1) {
