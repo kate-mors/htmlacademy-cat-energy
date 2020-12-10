@@ -14,12 +14,6 @@
   outline: 1px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
 
-  &--contrast-background {
-    @media (min-width: @desktop-width) {
-      background-color: @basic-white;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     height: 200px;
     margin: 0 72px 0 71px;
@@ -33,6 +27,12 @@
     position: absolute;
     top: 95px;
     left: 110px;
+  }
+
+  &--contrast-background {
+    @media (min-width: @desktop-width) {
+      background-color: @basic-white;
+    }
   }
 }
 
