@@ -1,6 +1,11 @@
 .example {
   padding: 27px 0 0 0;
   background-color: @special-light-grey-2;
+
+  @media (min-width: @tablet-width) {
+    padding: 47px 0 0 0;
+    background-image: linear-gradient(to bottom, @basic-white 619px, @special-light-grey-2 619px, @special-light-grey-2 100%);
+  }
 }
 
 .example__title {
@@ -11,17 +16,21 @@
   line-height: 40px;
   color: @basic-black;
 
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
-}
-
-.example__story {
-  outline: 3px solid #68b738;
-  outline-offset: -3px;
+  @media (min-width: @tablet-width) {
+    margin: 0 0 63px 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__story {
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__data-list {
@@ -53,6 +62,11 @@
   border: 1px solid @special-grey;
   box-sizing: border-box;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__data-description {
@@ -69,6 +83,11 @@
 
   outline: 1px solid #68b738;
   outline-offset: -1px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__costs {
@@ -79,8 +98,10 @@
   text-transform: uppercase;
   color: @basic-black;
 
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .example__slider {

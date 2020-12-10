@@ -1,10 +1,10 @@
 .features {
   margin: 0 20px;
-  outline: 1px solid #ff8282;
-  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    margin: 0;
+    border-bottom: 1px solid @special-light-grey-3;
+    box-sizing: content-box;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,6 +19,11 @@
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    padding-top: 15px;
+  }
 }
 
 .features__list {
@@ -26,12 +31,12 @@
   padding: 0;
   list-style: none;
 
-  outline: 1px solid #68b738;
-  outline-offset: -1px;
-
   @media (min-width: @tablet-width) {
+    margin: 32px 30px 0 30px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -47,8 +52,9 @@
   outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    width: 46%;
+    width: ~"calc(50% - 30px)";
     min-height: 280px;
+    margin: 0 0 37px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,5 +79,21 @@
     flex-shrink: 0;
     margin-right: 20px;
     background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 245px;
+    margin-right: 79px;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

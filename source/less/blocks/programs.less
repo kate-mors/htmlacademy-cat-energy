@@ -35,8 +35,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 372px;
-    margin-top: 30px;
+    margin: 0 0 30px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,6 +61,10 @@
   outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 77px 0 24px 53px;
+    justify-content: space-between;
+    align-items: flex-start;
     font-size: 36px;
     line-height: 36px;
   }
@@ -74,6 +77,15 @@
     flex-shrink: 0;
     margin-right: 19px;
     background-color: @basic-green;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 81px;
+      right: 0;
+      width: 200px;
+      height: 211px;
+      margin-right: 62px;
+    }
   }
 }
 
@@ -83,7 +95,7 @@
   border-bottom: 1px solid @special-light-grey-4;
 
   @media (min-width: @tablet-width) {
-    margin: 0 52px;
+    margin: 0 279px 0 52px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -130,7 +142,6 @@
       flex-shrink: 0;
       margin-left: 15px;
       background: url("../../img/svg/icon-arrow-activ.svg") no-repeat;
-
     }
   }
 
