@@ -7,8 +7,8 @@
   padding: 0;
   list-style: none;
 
-  outline: 2px solid #ff8282;
-  outline-offset: -2px;
+  outline: 1px solid #ff8282;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     min-width: 708px;
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 245px;
+    min-width: ~"calc(25% - 80px)";
     min-height: 511px;
     margin: 0 0 63px 80px;
     flex-grow: 1;
@@ -60,12 +60,6 @@
 
     @media (min-width: @desktop-width) {
       margin-left: 80px;
-    }
-  }
-
-  &:first-child {
-    @media (min-width: @desktop-width) {
-      margin-left: 0;
     }
   }
 
