@@ -36,10 +36,19 @@
 }
 
 .slider__buttons-list {
-  margin: 0 27px 25px;
+  margin: 0 25px 0 27px;
   padding: 23px 0 25px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 62px 0 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px 0 73px;
+  }
 }
 
 .slider__button {
