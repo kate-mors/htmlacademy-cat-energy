@@ -100,32 +100,34 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
     <p class="page-main__call-to-action">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="form__cat-info">
-        <label class="form__label">ИМЯ:*<input class="form__input" type="text" name="cat-name" placeholder="Барсик"
-            required></label>
-        <label class="form__label">Вес (кг):*<input class="form__input" type="number" placeholder="7" required></label>
-        <label class="form__label">Возраст (лет):<input class="form__input" type="number" placeholder="7"></label>
+      <div class="form__top">
+        <div class="form__cat-info">
+          <label class="form__label">ИМЯ:*<input class="form__input" type="text" name="cat-name" placeholder="Барсик"
+              required></label>
+          <label class="form__label">Вес (кг):*<input class="form__input" type="number" placeholder="7"
+              required></label>
+          <label class="form__label">Возраст (лет):<input class="form__input" type="number" placeholder="7"></label>
+        </div>
+        <div class="form__radio-labels">
+          <label class="form__label radio-label">Похудение<input class="form__input form__input--active radio-button"
+              type="radio" name="program-goal" value="Похудение" checked></label>
+          <label class="form__label radio-label">Набор массы<input class="form__input radio-button" type="radio"
+              name="program-goal" value="Набор массы"></label>
+          <label class="form__label radio-label">Не знаю (Нужен ваш совет)<input class="form__input radio-button"
+              type="radio" name="program-goal" value="Не знаю (Нужен ваш совет)"></label>
+        </div>
       </div>
-      <div class="form__radio-labels">
-        <label class="form__label radio-label">Похудение<input class="form__input form__input--active radio-button"
-            type="radio" name="program-goal" value="Похудение" checked></label>
-        <label class="form__label radio-label">Набор массы<input class="form__input radio-button" type="radio"
-            name="program-goal" value="Набор массы"></label>
-        <label class="form__label radio-label">Не знаю (Нужен ваш совет)<input class="form__input radio-button"
-            type="radio" name="program-goal" value="Не знаю (Нужен ваш совет)"></label>
-      </div>
-
       <div class="form__contacts">
-        <h2 class="form__subtitle">Контактные данные
+        <h2 class="form__subtitle form__subtitle--contacts">Контактные данные
           (владельца кота)</h2>
-        <label class="form__label">E-mail:*<input class="form__input" type="email" placeholder="kuklachev@gmail.com"
-            required></label>
-        <label class="form__label">Телефон:*<input class="form__input" type="tel" placeholder="8 (960) 900-60-90"
-            required></label>
+        <label class="form__label form__label--contacts">E-mail:*<input class="form__input" type="email"
+            placeholder="kuklachev@gmail.com" required></label>
+        <label class="form__label form__label--contacts">Телефон:*<input class="form__input" type="tel"
+            placeholder="8 (960) 900-60-90" required></label>
       </div>
 
       <div class="form__comments">
@@ -136,7 +138,7 @@
       </div>
 
       <div class="form__other-products">
-        <h2 class="form__subtitle">Дополнительно</h2>
+        <h2 class="form__subtitle form__subtitle--other-products">Дополнительно</h2>
         <label class="form__label checkbox-label">Сахарозаменитель<input
             class="form__input form__input--active checkbox" type="checkbox" checked></label>
         <label class="form__label checkbox-label">Питьевая вода<input class="form__input checkbox"
@@ -144,9 +146,11 @@
         <label class="form__label checkbox-label">Молоко<input class="form__input checkbox" type="checkbox"></label>
         <label class="form__label checkbox-label">Витамины<input class="form__input checkbox" type="checkbox"></label>
       </div>
-      <button class="form__button button" type="submit">Отправить заявку</button>
+      <div class="form__bottom">
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <p class="form__comment">* — Обязательные поля</p>
+      </div>
     </form>
-    <p class="page-main__comment">* — Обязательные поля</p>
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts page-footer__contacts--contrast-background contacts">
