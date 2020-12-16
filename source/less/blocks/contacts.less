@@ -1,20 +1,52 @@
-.contacts {
-  &--contrast-background {
-    background-color: @basic-grey;
+.contacts__wrapper {
+  padding: 42px 0 0 0;
+  outline: 1px solid @basic-green;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 62px 0 0 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 62px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .contacts__call-to-action {
+  margin: 0;
   font-family: @font-oswald;
   font-size: 16px;
   text-transform: uppercase;
   color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 80px 0 76px;
+  }
 }
 
 .contacts__address {
+  width: 140px;
+  margin: 0 0 0 auto;
   line-height: 20px;
-}
 
-.contacts__map {
-  background-image: url("../../img/contacts-map.png");
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 245px;
+    text-align: left;
+  }
 }
