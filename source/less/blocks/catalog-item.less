@@ -13,7 +13,7 @@
 .catalog-item__image {
   width: 50%;
   height: 112px;
-  margin-top: 19px;
+  margin: 19px 0 0 0;
   object-fit: contain;
 
   outline: 1px solid rgba(49, 15, 241, 0.8);
@@ -32,7 +32,7 @@
 
 .catalog-item__info {
   width: 50%;
-  margin-top: 19px;
+  margin: 19px 0 0 0;
 
   @media (min-width: @tablet-width) {
     width: ~"calc(100% - 72px)";
@@ -84,9 +84,5 @@
   @media (min-width: @tablet-width) {
     min-width: ~"calc(100% - 72px)";
     margin: 33px 0 40px 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 168px;
   }
 }
