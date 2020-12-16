@@ -1,38 +1,38 @@
 .page-header {
   min-height: 66px;
-  display: flex;
-  flex-direction: column;
+  margin: 0 20px;
 
   @media (min-width: @tablet-width) {
     min-height: 100px;
-    flex-direction: row;
+    margin: 0 30px;
+    display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 130px;
+    margin: 0 110px;
   }
 }
 
 .page-header__logo {
-  margin: 11px auto 16px 20px;
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  margin: 0;
+
+  outline: 1px solid #ff8282;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     width: 174px;
-    margin: 24px auto auto 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 202px;
-    margin: 53px auto auto 110px;
   }
 }
 
 .page-header__text-logo {
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid rgba(49, 15, 241, 0.8);
+  outline-offset: -1px;
 
   &:hover {
     opacity: 0.8;
@@ -44,8 +44,8 @@
 }
 
 .page-header__icon-logo {
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  outline: 1px solid rgba(49, 15, 241, 0.8);
+  outline-offset: -1px;
 
   &:hover {
     opacity: 0.8;
@@ -57,17 +57,17 @@
 }
 
 .page-header__nav {
-  width: 100%;
-  margin: 0 20px;
-  outline: 3px solid #ff8282;
-  outline-offset: -3px;
+  margin: 0;
+  outline: 1px solid #68b738;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    width: 70%;
-    margin: 42px 29px auto auto;
+    width: 62%;
+    height: 34px;
+    margin-top: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 69px 110px auto auto;
+    width: 40%;
   }
 }
