@@ -119,8 +119,10 @@
 }
 
 .programs__link {
+  width: 134px;
   padding: 15px 0 18px 19px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   font-family: @font-oswald;
   font-size: 16px;
@@ -142,7 +144,7 @@
   &::after {
     content: "";
     display: block;
-    width: 30px;
+    width: 32px;
     height: 12px;
     flex-shrink: 0;
     margin-left: 15px;
@@ -152,12 +154,6 @@
   &:hover,
   &:active {
     &::after {
-      content: "";
-      display: block;
-      width: 32px;
-      height: 12px;
-      flex-shrink: 0;
-      margin-left: 15px;
       background: url("../../img/svg/icon-arrow-activ.svg") no-repeat;
     }
   }

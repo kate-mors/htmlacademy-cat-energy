@@ -86,14 +86,15 @@
 
 .example__data-item {
   position: relative;
-  margin: 0 31px 0 0;
+  margin: 0 15px 0 0;
+  flex-basis: 50%;
 
   @media (min-width: @tablet-width) {
     margin: 0 42px 0 0;
   }
 
   &:last-child {
-    margin: 0;
+    margin: 0 0 0 15px;
   }
 }
 
@@ -121,11 +122,11 @@
 
 .example__data-description {
   position: absolute;
-  top: 47px;
-  left: 19px;
+  left: 0;
+  right: 0;
   width: 87px;
   height: 19px;
-  margin: 0;
+  margin: -8px auto 0 auto;
   padding: 0 15px;
   font-size: 12px;
   line-height: 12px;
