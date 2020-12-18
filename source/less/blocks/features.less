@@ -88,20 +88,10 @@
   justify-content: flex-start;
   align-items: center;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
-    margin-right: 20px;
-    background-color: #68b738;
-
-    @media (min-width: @tablet-width) {
-      margin-bottom: 31px;
-      width: 80px;
-      height: 80px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
   }
 
   @media (min-width: @tablet-width) {
@@ -112,5 +102,31 @@
     align-items: flex-start;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-color: @basic-green;
+  }
+
+  &--healthy::before {
+    background: url("../../img/svg/icon-leaf.svg") center no-repeat, @basic-green;
+  }
+
+  &--easy::before {
+    background: url("../../img/svg/icon-tub.svg") center no-repeat, @basic-green;
+  }
+
+  &--reach::before {
+    background: url("../../img/svg/icon-eat.svg") center no-repeat, @basic-green;
+  }
+
+  &--fast::before {
+    background: url("../../img/svg/icon-alarm.svg") center no-repeat, @basic-green;
   }
 }
