@@ -2,6 +2,10 @@
   position: relative;
   background-color: @basic-white;
 
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+
   &--closed {
     .main-nav__toggle::before {
       content: "";

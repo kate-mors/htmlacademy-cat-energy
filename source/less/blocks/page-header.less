@@ -3,19 +3,27 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 100px;
+    height: 78px;
     margin: 0 30px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 130px;
+    height: 112px;
     margin: 0 110px;
   }
 
   &--nojs {
     height: @header-nojs;
+
+    @media (min-width: @tablet-width) {
+      height: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 112px;
+    }
   }
 }
 
