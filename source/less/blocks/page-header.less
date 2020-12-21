@@ -1,28 +1,45 @@
 .page-header {
-  min-height: 66px;
-  margin: 0 20px;
+  height: @header;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 100px;
+    height: 78px;
     margin: 0 30px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 130px;
+    height: 112px;
     margin: 0 110px;
+  }
+
+  &--nojs {
+    height: @header-nojs;
+
+    @media (min-width: @tablet-width) {
+      height: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 112px;
+    }
   }
 }
 
 .page-header__logo {
-  margin: 0;
-
+  position: relative;
+  height: 38px;
+  margin: 12px 20px 16px 20px;
+  text-align: center;
   outline: 1px solid #ff8282;
   outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     width: 174px;
+    height: 58px;
+    margin: 24px auto 0 0;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,8 +47,12 @@
   }
 }
 
-.page-header__text-logo {
-  outline: 1px solid rgba(49, 15, 241, 0.8);
+.page-header__icon-logo {
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: 1px solid @basic-green;
   outline-offset: -1px;
 
   &:hover {
@@ -43,8 +64,8 @@
   }
 }
 
-.page-header__icon-logo {
-  outline: 1px solid rgba(49, 15, 241, 0.8);
+.page-header__text-logo {
+  outline: 1px solid @basic-green;
   outline-offset: -1px;
 
   &:hover {
@@ -53,18 +74,24 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.page-header__image-text {
+  padding: 12px 0 7px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 0 13px 0;
   }
 }
 
 .page-header__nav {
   margin: 0;
-  outline: 1px solid #68b738;
-  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
     width: 62%;
     height: 34px;
-    margin-top: 42px;
+    margin: 42px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
