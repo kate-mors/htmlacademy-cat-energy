@@ -15,39 +15,4 @@
   grid-template-rows: min-content 1fr min-content;
   color: @special-dark-grey;
   background-color: @basic-white;
-
-  &--contrast-background {
-    background-image: linear-gradient(to bottom, @cover-green 302px, @basic-white 302px),
-      url("../../img/index-bg-promo.png");
-    background-repeat: no-repeat;
-    background-position: 50% @header;
-
-    @media (min-width: @tablet-width) {
-      background-image: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: linear-gradient(to left, @cover-green 720px, @basic-white 720px),
-        url("../../img/index-bg-promo-desktop.png");
-      background-repeat: no-repeat;
-      background-position: 100% 0;
-      background-size: 720px 694px;
-    }
-  }
-
-  &--contrast-background-nojs {
-    background-position: 50% @header-nojs;
-
-    @media (min-width: @tablet-width) {
-      background-image: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: linear-gradient(to left, @cover-green 720px, @basic-white 720px),
-        url("../../img/index-bg-promo-desktop.png");
-      background-repeat: no-repeat;
-      background-position: 100% 0;
-      background-size: 720px 694px;
-    }
-  }
 }

@@ -8,7 +8,7 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body page__body--contrast-background page__body--contrast-background-nojs">
+<body class="page__body">
   <header class="page-header page-header--nojs">
     <div class="page-header__logo">
       <a class="page-header__icon-logo">
@@ -102,6 +102,9 @@
   <main class="page-main">
     <h1 class="page-main__title page-main__title--contrast">Функциональное<br>
       питание для котов</h1>
+    <div class="page-main__background">
+      <div class="page-main__background-color"></div>
+    </div>
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="visually-hidden">Промо блок сайта Cat energy.</h2>
@@ -172,7 +175,10 @@
             <dd class="example__data-description example__data-description--days">затрачено времени</dd>
           </div>
         </dl>
-        <p class="example__costs">Затраты на питание: 15 000 РУБ.</p>
+        <div class="example__costs">
+          <p class="example__costs-text">Затраты на питание:</p>
+          <p class="example__costs-price">15 000 РУБ.</p>
+        </div>
       </div>
       <div class="example__slider slider">
         <ul class="slider__list">
