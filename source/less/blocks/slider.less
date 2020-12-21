@@ -1,10 +1,45 @@
+.slider {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .slider__list {
   margin: 0;
   padding: 0;
+  display: flex;
   list-style: none;
+  outline: 1px solid #68b738;
+  outline-offset: -1px;
+}
+
+.slider__image {
+  margin: auto 0;
+}
+
+.slider__buttons-list {
+  margin: 0 25px 0 27px;
+  padding: 23px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 62px 0 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px 0 73px;
+  }
 }
 
 .slider__button {
+  position: relative;
+  min-width: 70px;
+  min-height: 40px;
+  margin: 0;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 16px;
@@ -13,4 +48,78 @@
   color: @basic-black;
   border: none;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      border-bottom: 1px dotted @basic-black;
+      opacity: 0.24;
+    }
+  }
+
+  &:active {
+    @media (min-width: @tablet-width) {
+      border: 1px solid @basic-black;
+      opacity: 0.4;
+    }
+  }
+}
+
+.slider__range {
+  position: relative;
+  min-width: 84px;
+  height: 14px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background: @basic-white;
+  border: 1px solid @special-grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 428px;
+    height: 6px;
+    justify-content: center;
+    background: @special-grey;
+    border-radius: 6px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 6px;
+    margin: 0 6px;
+    background: @basic-green;
+    border-radius: 6px;
+
+    @media (min-width: @tablet-width) {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: @basic-white;
+      border: 1px solid @special-grey;
+      box-sizing: border-box;
+      border-radius: 50%;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: @basic-green;
+      border-radius: 6px;
+    }
+  }
 }
