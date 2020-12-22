@@ -70,74 +70,71 @@
     align-items: center;
   }
 
-  &--slim::before {
-    content: "";
-    display: block;
-    flex-shrink: 0;
-    width: 50px;
-    height: 53px;
-    margin: 0 19px 0 0;
-    background-image: url("../../img/svg/cat-back-mobile.svg");
+  &--slim {
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 50px;
+      height: 53px;
+      margin: 0 19px 0 0;
+      background-image: url("../../img/svg/cat-back-mobile.svg");
 
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      top: 186px;
-      right: 62px;
-      left: auto;
-      bottom: 0;
-      width: 200px;
-      height: 211px;
-      margin: auto;
-      background-image: url("../../img/svg/cat-back-tablet.svg");
-    }
+      @media (min-width: @tablet-width) {
+        position: absolute;
+        top: 186px;
+        right: 62px;
+        left: auto;
+        bottom: 0;
+        width: 200px;
+        height: 211px;
+        margin: auto;
+        background-image: url("../../img/svg/cat-back-tablet.svg");
+      }
 
-    @media (min-width: @desktop-width) {
-      position: relative;
-      top: 0;
-      right: 0;
-      width: 100px;
-      height: 106px;
-      margin: 0 62px 0 0;
-      background-image: url("../../img/svg/cat-back-desktop.svg");
+      @media (min-width: @desktop-width) {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 106px;
+        margin: 0 62px 0 0;
+        background-image: url("../../img/svg/cat-back-desktop.svg");
+      }
     }
   }
 
-  &--pro::before {
-    content: "";
-    display: block;
-    flex-shrink: 0;
-    width: 67px;
-    height: 50px;
-    margin: 0 11px 0 0;
-    background-image: url("../../img/svg/cat-walk-mobile.svg");
+  &--pro {
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 67px;
+      height: 50px;
+      margin: 0 11px 0 0;
+      background-image: url("../../img/svg/cat-walk-mobile.svg");
 
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      top: 191px;
-      right: 28px;
-      left: auto;
-      bottom: 0;
-      width: 268px;
-      height: 200px;
-      margin: auto;
-      background-image: url("../../img/svg/cat-walk-tablet.svg");
-    }
+      @media (min-width: @tablet-width) {
+        position: absolute;
+        top: 191px;
+        right: 28px;
+        left: auto;
+        bottom: 0;
+        width: 268px;
+        height: 200px;
+        margin: auto;
+        background-image: url("../../img/svg/cat-walk-tablet.svg");
+      }
 
-    @media (min-width: @desktop-width) {
-      position: relative;
-      top: 0;
-      right: 0;
-      width: 134px;
-      height: 100px;
-      margin: 6px 33px 0 0;
-      background-image: url("../../img/svg/cat-walk-desktop.svg");
-    }
-
-    @media (min-width: @desktop-width) {
-      position: relative;
-      top: 0;
-      width: 100px;
-      height: 106px;
+      @media (min-width: @desktop-width) {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 134px;
+        height: 100px;
+        margin: 6px 33px 0 0;
+        background-image: url("../../img/svg/cat-walk-desktop.svg");
+      }
     }
   }
 }

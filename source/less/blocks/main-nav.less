@@ -41,17 +41,13 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  outline: 1px solid #68b738;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    margin: 42px auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 70px auto 0 auto;
-    min-height: 40px;
   }
 }
 
@@ -63,9 +59,11 @@
   line-height: 20px;
   text-transform: uppercase;
   border-top: 1px solid @special-light-grey-3;
+  outline: 1px solid @status-error;
+  outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 35px 0 0;
+    margin: 0 0 0 35px;
     padding: 0;
     font-size: 18px;
     line-height: 24px;
@@ -73,7 +71,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 33px 0 0;
+    margin: 0 0 0 33px;
     font-size: 20px;
     line-height: 30px;
   }
