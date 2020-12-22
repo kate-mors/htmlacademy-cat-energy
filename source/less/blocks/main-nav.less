@@ -45,6 +45,7 @@
   outline-offset: -1px;
 
   @media (min-width: @tablet-width) {
+    height: 36px;
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
@@ -76,11 +77,21 @@
     line-height: 30px;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--active {
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic-green;
     }
+  }
 
+  &--contrast {
     @media (min-width: @desktop-width) {
       border-bottom: 2px solid @basic-white;
     }
@@ -90,14 +101,6 @@
 .main-nav__link {
   text-decoration: none;
   color: @basic-black;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   &--contrast {
     @media (min-width: @desktop-width) {

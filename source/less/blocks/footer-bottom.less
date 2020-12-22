@@ -13,6 +13,10 @@
   margin: 39px auto 32px auto;
   display: inline-block;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
   &:active {
     opacity: 0.6;
   }
@@ -28,10 +32,11 @@
 }
 
 .footer-bottom__social-list {
+  height: 22px;
   margin: 0 20px;
   padding: 20px 0 21px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none;
   border-top: 1px solid @special-light-grey-4;
   border-bottom: 1px solid @special-light-grey-4;
@@ -39,7 +44,46 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
+    justify-content: space-between;
     border: none;
+  }
+}
+
+.footer-bottom__social-item {
+  &--vk {
+    margin: auto 33px auto 0;
+
+    @media (min-width: @tablet-width) {
+      margin: auto 27px auto 0;
+    }
+  }
+
+  &--instagram {
+    margin: auto 33px auto 0;
+
+    @media (min-width: @tablet-width) {
+      margin: auto 21px auto 0;
+    }
+  }
+
+  &--facebook {
+    margin: auto 0 auto 0;
+  }
+}
+
+.footer-bottom__social-link {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-bottom__social-icon {
+  fill: @special-grey-3;
+  vertical-align: bottom;
+
+  &:hover,
+  &:active {
+    fill: @basic-green;
   }
 }
 
@@ -68,7 +112,7 @@
   }
 }
 
-.footer-bottom__copyright-icon {
+.footer-bottom__copyright-image {
   &:active {
     opacity: 0.3;
   }
@@ -78,7 +122,7 @@
   }
 }
 
-.footer-bottom__copyright-image {
+.footer-bottom__copyright-icon {
   fill: @special-grey-3;
 
   &:hover,
