@@ -41,6 +41,16 @@
       margin: 111px 110px 0 190px;
     }
   }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      margin: 65px 30px 83px 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 74px 110px 56px 110px;
+    }
+  }
 }
 
 .page-main__background {
@@ -82,12 +92,20 @@
 }
 
 .page-main__call-to-action {
+  width: 226px;
+  margin: 0 20px;
   font-family: @font-oswald;
   text-transform: uppercase;
   color: @basic-black;
-}
 
-.page-main__comment {
-  line-height: 16px;
-  color: @basic-black;
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    margin: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
 }
