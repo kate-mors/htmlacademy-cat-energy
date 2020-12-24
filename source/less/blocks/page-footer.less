@@ -45,7 +45,17 @@
 }
 
 .page-footer__map {
-  background-image: url("../../img/contacts-map.png");
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .page-footer__bottom {
