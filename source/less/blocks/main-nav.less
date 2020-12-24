@@ -81,6 +81,42 @@
       display: block;
     }
   }
+
+  @media (min-width: @mobile-width) {
+    &--closed .main-nav__item {
+      display: none;
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 24px;
+        height: 1.5px;
+        background-color: @basic-black;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:active::before,
+      &:active::after {
+        background-color: fade(@basic-black, 30%);
+      }
+    }
+  }
 }
 
 .main-nav__toggle {
