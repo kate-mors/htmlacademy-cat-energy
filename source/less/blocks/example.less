@@ -1,16 +1,16 @@
 .example {
-  padding: 27px 0 0 0;
+  padding: 27px 0 16px 0;
   background-color: @special-light-grey-2;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 0 0 0;
+    padding: 43px 0 54px 0;
     background-image: linear-gradient(to bottom, @basic-white 619px, @special-light-grey-2 619px, @special-light-grey-2 100%);
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    padding: 69px 0 0 0;
-    background-image: linear-gradient(to bottom, @basic-white 205px, @special-light-grey-2 205px, @special-light-grey-2 100%);
+    padding: 60px 0 0 0;
+    background-image: linear-gradient(to bottom, @basic-white 195px, @special-light-grey-2 195px, @special-light-grey-2 100%);
   }
 }
 
@@ -23,7 +23,7 @@
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px 63px 30px;
+    margin: 0 30px 64px 30px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -45,7 +45,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 436px;
-    margin: 0 890px 0 110px;
+    margin: 0 775px 0 110px;
     padding: 70px 0 0 0;
   }
 }
@@ -54,7 +54,7 @@
   margin: 0 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 54px 30px 59px 30px;
+    margin: 53px 30px 59px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +65,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 110px 0 110px;
-    padding: 69px 0 75px 0;
+    padding: 68px 0 75px 0;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -81,7 +81,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 55px 0;
+    margin: 0 0 60px 0;
   }
 }
 
@@ -91,14 +91,14 @@
   flex-basis: 50%;
 
   @media (min-width: @tablet-width) {
-    margin: 0 12px 0 0;
+    margin: 0 21px 0 0;
   }
 
   &:last-child {
     margin: 0 0 0 15px;
 
     @media (min-width: @tablet-width) {
-      margin: 0 0 0 12px;
+      margin: 0 0 0 21px;
     }
   }
 }
@@ -206,13 +206,5 @@
 }
 
 .example__slider {
-  margin: 0 20px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
+  margin: 0;
 }

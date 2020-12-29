@@ -28,7 +28,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 47%;
+    width: ~"calc(50% - 40px)";
     min-height: 374px;
     margin: 0;
     padding: 0;
@@ -74,7 +74,7 @@
 
       @media (min-width: @tablet-width) {
         position: absolute;
-        top: 186px;
+        top: 235px;
         right: 62px;
         left: auto;
         bottom: 0;
@@ -108,7 +108,7 @@
 
       @media (min-width: @tablet-width) {
         position: absolute;
-        top: 191px;
+        top: 245px;
         right: 28px;
         left: auto;
         bottom: 0;
@@ -137,7 +137,7 @@
   border-bottom: 1px solid @special-light-grey-4;
 
   @media (min-width: @tablet-width) {
-    margin: 24px 279px 48px 52px;
+    margin: 1px 279px 51px 52px;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
@@ -148,12 +148,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 51px 23px 52px;
+    margin: 0 51px 2px 52px;
   }
 
   &--pro {
     @media (min-width: @tablet-width) {
-      margin: 24px 308px 48px 52px;
+      margin: 1px 308px 51px 52px;
     }
 
     @media (min-width: @desktop-width) {
@@ -192,8 +192,12 @@
     width: 32px;
     height: 12px;
     flex-shrink: 0;
-    margin-left: 16px;
+    margin: 0 0 0 16px;
     background: url("../../img/svg/icon-arrow.svg") no-repeat;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 0 0 25px;
+    }
   }
 
   &:hover,
@@ -208,6 +212,6 @@
   }
 
   &--pro::after {
-    margin-left: 18px;
+    margin: 0 0 0 26px;
   }
 }
