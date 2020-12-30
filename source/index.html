@@ -354,21 +354,23 @@
           <p class="example__costs-price">15 000 РУБ.</p>
         </div>
       </div>
-      <div class="example__slider slider">
-        <ul class="slider__list">
-          <li class="slider__item slider__item--before">
+      <div class="example__slider slider slider--mobile-only slider--nojs">
+        <ul class="slider__list slider__list--mobile-only slider__list--nojs">
+          <li class="slider__item slider__item--mobile-only slider__item--nojs slider__item--before" id="before">
             <img class="slider__image slider__image--before" src="img/before-mobile.png" width="311" height="232"
               alt="Кот Борис до Cat energy.">
           </li>
-          <li class="slider__item slider__item--after">
+          <li class="slider__item slider__item--mobile-only slider__item--nojs slider__item--after" id="after">
             <img class="slider__image slider__image--after" src="img/after-mobile.png" width="251" height="240"
               alt="Кот Борис после Cat energy.">
           </li>
         </ul>
         <div class="slider__buttons-list">
-          <button class="slider__button slider__button--before" type="button">Было</button>
+          <button class="slider__button slider__button--before" type="button"
+            onclick="location.href='#before'">Было</button>
           <div class="slider__range"></div>
-          <button class="slider__button slider__button--after" type="button">Стало</button>
+          <button class="slider__button slider__button--after" type="button"
+            onclick="location.href='#after'">Стало</button>
         </div>
       </div>
     </section>
@@ -469,5 +471,6 @@
   </footer>
 </body>
 <script src="js/main-nav.js"></script>
+<script src="js/slider.js"></script>
 
 </html>
