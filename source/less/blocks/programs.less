@@ -74,7 +74,7 @@
 
       @media (min-width: @tablet-width) {
         position: absolute;
-        top: 235px;
+        top: 185px;
         right: 62px;
         left: auto;
         bottom: 0;
@@ -108,7 +108,7 @@
 
       @media (min-width: @tablet-width) {
         position: absolute;
-        top: 245px;
+        top: 190px;
         right: 28px;
         left: auto;
         bottom: 0;
@@ -121,10 +121,10 @@
       @media (min-width: @desktop-width) {
         position: relative;
         top: 0;
-        right: 0;
+        right: 19px;
         width: 134px;
         height: 100px;
-        margin: 6px 33px 0 0;
+        margin: 6px 28px 0 0;
         background-image: url("../../img/svg/cat-walk-desktop.svg");
       }
     }
@@ -148,7 +148,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 51px 2px 52px;
+    margin: 0 51px 26px 52px;
   }
 
   &--pro {
@@ -157,7 +157,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin: 0 51px 23px 52px;
+      margin: 0 51px 26px 52px;
     }
   }
 }
@@ -183,6 +183,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 170px;
     padding: 0 0 55px 52px;
   }
 
@@ -198,6 +199,10 @@
     @media (min-width: @tablet-width) {
       margin: 0 0 0 25px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 0 0 28px;
+    }
   }
 
   &:hover,
@@ -211,7 +216,17 @@
     opacity: 0.3;
   }
 
-  &--pro::after {
-    margin: 0 0 0 26px;
+  &--pro {
+    &::after {
+      margin: 0 0 0 18px;
+
+      @media (min-width: @tablet-width) {
+        margin: 0 0 0 26px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin: 0 0 0 27px;
+      }
+    }
   }
 }
