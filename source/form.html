@@ -282,9 +282,10 @@
         <div class="form__cat-info">
           <label class="form__label">ИМЯ:*<input class="form__input" type="text" name="cat-name" placeholder="Барсик"
               required></label>
-          <label class="form__label">Вес (кг):*<input class="form__input" type="number" placeholder="7"
-              required></label>
-          <label class="form__label">Возраст (лет):<input class="form__input" type="number" placeholder="7"></label>
+          <label class="form__label">Вес (кг):*<input class="form__input form__input--weight" type="number"
+              placeholder="7" required></label>
+          <label class="form__label">Возраст (лет):<input class="form__input form__input--age" type="number"
+              placeholder="7"></label>
         </div>
         <div class="form__radio-labels radio">
           <label class="form__label radio__label">Похудение<input
@@ -302,8 +303,8 @@
         <label class="form__label form__label--contacts">E-mail:* <img class="form__icon" src="img/svg/email.svg"
             alt="Конверт.">
           <input class="form__input form__input--email" type="email" placeholder="kuklachev@gmail.com" required></label>
-        <label class="form__label form__label--contacts">Телефон:* <img class="form__icon" src="img/svg/phone.svg"
-            alt="Трубка телефона.">
+        <label class="form__label form__label--contacts">Телефон:* <img class="form__icon form__icon--phone"
+            src="img/svg/phone.svg" alt="Трубка телефона.">
           <input class="form__input form__input--phone" type="tel" placeholder="8 (960) 900-60-90" required></label>
       </div>
 
@@ -316,14 +317,15 @@
 
       <div class="form__other-products checkbox">
         <h2 class="form__subtitle form__subtitle--other-products">Дополнительно</h2>
-        <label class="form__label checkbox__label">Сахарозаменитель<input
-            class="form__input checkbox__input checkbox__input--active" type="checkbox" checked></label>
-        <label class="form__label checkbox__label">Питьевая вода<input class="form__input checkbox__input"
-            type="checkbox"></label>
-        <label class="form__label checkbox__label">Молоко<input class="form__input checkbox__input"
-            type="checkbox"></label>
-        <label class="form__label checkbox__label">Витамины<input class="form__input checkbox__input"
-            type="checkbox"></label>
+        <label
+          class="form__label form__label--checkbox form__label--checkbox--active checkbox__label">Сахарозаменитель<input
+            class="form__input checkbox__input" type="checkbox" checked></label>
+        <label class="form__label form__label--checkbox checkbox__label">Питьевая вода<input
+            class="form__input checkbox__input" type="checkbox"></label>
+        <label class="form__label form__label--checkbox checkbox__label">Молоко<input
+            class="form__input checkbox__input" type="checkbox"></label>
+        <label class="form__label form__label--checkbox checkbox__label">Витамины<input
+            class="form__input checkbox__input" type="checkbox"></label>
       </div>
       <div class="form__bottom">
         <button class="form__button button" type="submit">Отправить заявку</button>

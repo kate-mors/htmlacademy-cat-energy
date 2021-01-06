@@ -1,6 +1,17 @@
+.radio__button {
+  display: none;
+
+  &--active {
+    .radio__label::after {
+      transform: scale(1);
+    }
+  }
+}
+
 .radio__label {
   position: relative;
-  margin: auto auto 13px 45px;
+  height: 30px;
+  margin: auto auto 1px 45px;
   padding: 6px 0;
   color: @special-dark-grey-2;
   cursor: pointer;
@@ -41,23 +52,10 @@
   }
 
   &::after {
-    top: 0;
+    top: 8px;
     left: -37px;
     width: 14px;
     height: 14px;
     background-color: @basic-green;
-    transform: scale(0);
-    transition-duration: 0.28s;
-    transition-property: transform;
-  }
-}
-
-.radio__button {
-  display: none;
-
-  &--active {
-    .radio__label::after {
-      transform: scale(1);
-    }
   }
 }

@@ -19,7 +19,7 @@
 }
 
 .form__cat-info {
-  padding: 0 20px 27px 20px;
+  padding: 0 20px 9px 19px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +37,7 @@
 }
 
 .form__radio-labels {
-  padding: 22px 20px 19px 20px;
+  padding: 22px 20px 6px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,7 +60,8 @@
 
 .form__label {
   position: relative;
-  margin: 0 0 13px 0;
+  height: 45px;
+  margin: 0 0 14px 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -80,11 +81,23 @@
       width: ~"calc(50% - 40px)";
     }
   }
+
+  &--checkbox {
+    height: 30px;
+    margin: 0 0 13px 1px;
+    align-items: center;
+
+    &--active {
+      .checkbox-label::before {
+        background: url("../../img/svg/tick.svg") no-repeat;
+      }
+    }
+  }
 }
 
 .form__input {
   margin: 0 0 0 14px;
-  padding: 13px 15px 14px 15px;
+  padding: 9px 15px 9px 15px;
   flex-grow: 1;
   font-family: @font-oswald;
   font-style: normal;
@@ -120,35 +133,48 @@
     outline-offset: -2px;
   }
 
+  &--weight {
+    margin: 0 0 0 17px;
+  }
+
+  &--email {
+    margin: 0 0 0 12px;
+  }
+
+  &--phone {
+    margin: 0 0 0 10px;
+  }
+
   &--textarea {
-    min-height: 150px;
-    margin: 0;
-    padding: 10px 12px 14px 15px;
+    min-height: 126px;
+    margin: 3px 0 0 1px;
+    padding: 8px 12px 14px 14px;
   }
 }
 
 .form__icon {
   position: absolute;
   right: 15px;
-  top: 20px;
-  stroke: @basic-green;
+  top: 16px;
+  color: @basic-green;
 
-  &:last-of-type {
-    top: 16px;
+  &--phone {
+    top: 13px;
+    right: 13px;
   }
 
   &:disabled {
-    fill: @basic-green;
+    color: @basic-green;
   }
 
   &:invalid {
-    fill: @status-error;
+    color: @status-error;
   }
 }
 
 
 .form__contacts {
-  padding: 26px 20px 0 20px;
+  padding: 26px 20px 0 19px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -186,15 +212,17 @@
   }
 
   &--other-products {
+    margin: 0 0 34px 0;
+
     @media (min-width: @tablet-width) {
       width: 100%;
-      margin: 0 0 57px 0;
+      margin: 0 0 56px 0;
     }
   }
 }
 
 .form__comments {
-  padding: 23px 20px 0 20px;
+  padding: 10px 20px 0 19px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -209,7 +237,7 @@
 }
 
 .form__other-products {
-  padding: 22px 20px 0 20px;
+  padding: 23px 20px 0 19px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -239,8 +267,9 @@
 }
 
 .form__button {
-  margin: 34px 20px 0 20px;
+  margin: 32px 20px 0 20px;
   width: ~"calc(100% - 40px)";
+  padding: 10px 44px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -253,7 +282,7 @@
 }
 
 .form__comment {
-  margin: 21px 20px 32px 20px;
+  margin: 22px 20px 32px 20px;
   line-height: 16px;
   text-align: center;
   color: @basic-black;
