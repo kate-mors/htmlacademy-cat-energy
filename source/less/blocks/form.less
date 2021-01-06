@@ -233,6 +233,18 @@
       }
     }
   }
+
+  &--checkbox {
+    height: 30px;
+    margin: 0 0 13px 1px;
+    align-items: center;
+
+    &--active {
+      .checkbox-label::before {
+        background: url("../../img/svg/tick.svg") no-repeat;
+      }
+    }
+  }
 }
 
 .form__input {
@@ -297,6 +309,18 @@
 
   &--age {
     width: ~"calc(50% - 92px)";
+  }
+
+  &--weight {
+    margin: 0 0 0 17px;
+  }
+
+  &--email {
+    margin: 0 0 0 12px;
+  }
+
+  &--phone {
+    margin: 0 0 0 10px;
   }
 
   &--textarea {
