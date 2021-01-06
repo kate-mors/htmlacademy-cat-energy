@@ -159,19 +159,28 @@
     }
   }
 
-  &--healthy::before {
-    background: url("../../img/svg/icon-leaf.svg") center no-repeat, @basic-green;
+  &--healthy {
+    &::before {
+      background: url("../../img/svg/icon-leaf.svg") center no-repeat, @basic-green;
+    }
   }
 
-  &--easy::before {
-    background: url("../../img/svg/icon-tub.svg") center no-repeat, @basic-green;
+  &--easy {
+    &::before {
+      background: url("../../img/svg/icon-tub.svg") center no-repeat, @basic-green;
+    }
   }
 
-  &--reach::before {
-    background: url("../../img/svg/icon-eat.svg") center no-repeat, @basic-green;
+
+  &--reach {
+    &::before {
+      background: url("../../img/svg/icon-eat.svg") center no-repeat, @basic-green;
+    }
   }
 
-  &--fast::before {
-    background: url("../../img/svg/icon-alarm.svg") center no-repeat, @basic-green;
+  &--fast {
+    &::before {
+      background: url("../../img/svg/icon-alarm.svg") center no-repeat, @basic-green;
+    }
   }
 }
