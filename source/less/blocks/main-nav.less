@@ -120,6 +120,12 @@
   @media (min-width: @desktop-width) {
     height: 38px;
   }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      height: 32px;
+    }
+  }
 }
 
 .main-nav__item {
@@ -165,6 +171,12 @@
   &--active {
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic-green;
+    }
+
+    &:last-child {
+      @media (min-width: @tablet-width) {
+        border-bottom: 2px solid @basic-green;
+      }
     }
   }
 
