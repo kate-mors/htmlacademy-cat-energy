@@ -15,7 +15,7 @@
   }
 
   &--nojs {
-    height: @header-nojs;
+    height: @header-opened;
 
     @media (min-width: @tablet-width) {
       height: 78px;
@@ -30,11 +30,10 @@
 .page-header__logo {
   position: relative;
   height: 38px;
-  margin: 12px 20px 16px 20px;
-  text-align: center;
+  margin: 12px 21px 15px 20px;
 
   @media (min-width: @tablet-width) {
-    width: 174px;
+    width: 173px;
     height: 58px;
     margin: 24px auto 0 0;
     text-align: right;
@@ -51,8 +50,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  outline: 1px solid @basic-green;
-  outline-offset: -1px;
 
   &:hover {
     opacity: 0.8;
@@ -64,8 +61,20 @@
 }
 
 .page-header__text-logo {
-  outline: 1px solid @basic-green;
-  outline-offset: -1px;
+  margin: 0 2% 0 32%;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 103px;
+    height: 19px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 118px;
+    height: 22px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -80,7 +89,7 @@
   padding: 12px 0 7px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 20px 0 13px 0;
+    padding: 0;
   }
 }
 
