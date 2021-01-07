@@ -10,15 +10,19 @@
 
 .footer-bottom__logo {
   height: 24px;
-  margin: 39px auto 32px auto;
+  margin: 32px auto 31px auto;
   display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &:active {
     opacity: 0.6;
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 30px;
+    margin: -4px 0 0 30px;
     flex-shrink: 0;
   }
 
@@ -28,19 +32,46 @@
 }
 
 .footer-bottom__social-list {
+  height: 22px;
   margin: 0 20px;
-  padding: 20px 0 21px 0;
+  padding: 19px 77px 21px 73px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   border-top: 1px solid @special-light-grey-4;
   border-bottom: 1px solid @special-light-grey-4;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    width: 129px;
+    margin: 51px 130px auto 156px;
     padding: 0;
     border: none;
   }
+}
+
+.footer-bottom__social-item {
+  margin: auto 0 auto 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer-bottom__social-link {
+  color: @special-grey-3;
+
+  &:hover,
+  &:active {
+    color: @basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-bottom__social-icon {
+  vertical-align: bottom;
 }
 
 .footer-bottom__copyright {
@@ -48,6 +79,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 1px 31px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 10px 110px 0 0;
+  }
+}
+
+.footer-bottom__copyright-text {
+  margin: -6px 0 0 0;
   font-size: 16px;
   text-decoration: none;
   color: @special-dark-grey;
@@ -55,24 +98,23 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &::after {
-    content: " ";
-    display: block;
-    width: 27px;
-    height: 34px;
-    background-image: url("../../img/svg/logo-html-mobile.svg");
-
-    @media (min-width: @tablet-width) {
-      margin-left: 22px;
-    }
+.footer-bottom__copyright-image {
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px 0 0;
+    margin: 0 0 0 22px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    margin: 0 110px 0 0;
+.footer-bottom__copyright-icon {
+  fill: @special-grey-3;
+
+  &:hover,
+  &:active {
+    fill: @basic-green;
   }
 }

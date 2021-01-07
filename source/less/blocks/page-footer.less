@@ -9,14 +9,10 @@
 
 .page-footer__contacts {
   height: 114px;
-  margin: 0 19px 0 19px;
-
-  outline: 1px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     height: 200px;
-    margin: 0 72px 0 71px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,22 +26,23 @@
   }
 
   &--contrast-background {
-    @media (min-width: @desktop-width) {
-      background-color: @basic-white;
-    }
+    background-color: @basic-white;
   }
 }
 
 .page-footer__map-area {
   width: 100%;
   min-height: 362px;
-
-  outline: 2px solid rgba(49, 15, 241, 0.8);
-  outline-offset: -2px;
 }
 
 .page-footer__map {
-  background-image: url("../../img/contacts-map.png");
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .page-footer__bottom {
@@ -54,6 +51,6 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 150px;
+    min-height: 138px;
   }
 }
