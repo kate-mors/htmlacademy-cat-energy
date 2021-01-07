@@ -243,16 +243,20 @@
     }
   }
 
-  &:hover::before {
-    @media (min-width: @tablet-width) {
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  &:hover {
+    &::before {
+      @media (min-width: @tablet-width) {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      }
     }
   }
 
-  &:active::before {
-    @media (min-width: @tablet-width) {
-      border: 1px solid @basic-green;
-      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+  &:active {
+    &::before {
+      @media (min-width: @tablet-width) {
+        border: 1px solid @basic-green;
+        filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      }
     }
   }
 
