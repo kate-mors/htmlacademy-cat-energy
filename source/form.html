@@ -335,15 +335,23 @@
 
       <div class="form__other-products checkbox">
         <h2 class="form__subtitle form__subtitle--other-products">Дополнительно</h2>
-        <label
-          class="form__label form__label--checkbox form__label--checkbox--active checkbox__label">Сахарозаменитель<input
-            class="form__input checkbox__input" type="checkbox" checked></label>
-        <label class="form__label form__label--checkbox checkbox__label">Питьевая вода<input
-            class="form__input checkbox__input" type="checkbox"></label>
-        <label class="form__label form__label--checkbox checkbox__label">Молоко<input
-            class="form__input checkbox__input" type="checkbox"></label>
-        <label class="form__label form__label--checkbox checkbox__label">Витамины<input
-            class="form__input checkbox__input" type="checkbox"></label>
+        <div class="form__fieldset">
+          <input class="form__input checkbox__input" type="checkbox" id="ckeckbox-sugar" checked>
+          <label class="form__label checkbox__label checkbox__label--active"
+            for="checkbox-sugar">Сахарозаменитель</label>
+        </div>
+        <div class="form__fieldset">
+          <input class="form__input checkbox__input" type="checkbox" id="checkbox-water">
+          <label class="form__label checkbox__label" for="checkbox-water">Питьевая вода</label>
+        </div>
+        <div class="form__fieldset">
+          <input class="form__input checkbox__input" type="checkbox" id="checkbox-milk">
+          <label class="form__label form__label--checkbox checkbox__label" for="checkbox-milk">Молоко</label>
+        </div>
+        <div class="form__fieldset">
+          <input class="form__input checkbox__input" type="checkbox" id="checkbox-vitamins">
+          <label class="form__label form__label--checkbox checkbox__label" for="checkbox-vitamins">Витамины</label>
+        </div>
       </div>
       <div class="form__bottom">
         <button class="form__button button" type="submit">Отправить заявку</button>
