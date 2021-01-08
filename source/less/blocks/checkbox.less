@@ -5,8 +5,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 4px;
-      left: -40px;
+      top: 8px;
+      left: -48px;
       width: 19px;
       height: 15px;
       background: url("../../img/svg/tick.svg");
@@ -21,13 +21,4 @@
 .checkbox__label {
   color: @basic-black;
   cursor: pointer;
-
-  @media (min-width: @tablet-width) {
-    margin: auto auto auto 32px 19px;
-    padding: 5px 0 5px 59px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: ~"calc(25% - 40px)";
-  }
 }
