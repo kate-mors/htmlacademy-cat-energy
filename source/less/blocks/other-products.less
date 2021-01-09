@@ -58,6 +58,23 @@
       margin: 23px 0 0 35px;
     }
   }
+
+  &::after {
+    content: "";
+    min-width: 53px;
+    height: 2px;
+    margin: 15px 0 0 21px;
+    flex: 1 0 auto;
+    background-color: @basic-green;
+
+    @media (min-width: @tablet-width) {
+      margin: 22px 0 0 43px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 22px 0 0 41px;
+    }
+  }
 }
 
 .other-products__list-promo {
