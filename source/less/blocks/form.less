@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 69px 0 72px 0;
+    margin: 66px 0 72px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,11 +14,12 @@
 
 .form__top {
   width: 100%;
+  margin: 0 0 26px 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: ~"calc(100% - 138px)";
-    margin: 0 67px 0 71px;
+    margin: 0 67px 75px 71px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,7 +31,7 @@
 }
 
 .form__cat-info {
-  width: ~"calc(100% - 41px)";
+  width: ~"calc(100% - 40px)";
   margin: 0 20px 23px 19px;
   padding: 0;
   box-sizing: border-box;
@@ -68,7 +69,7 @@
     margin: 0 0 13px 0;
 
     @media (min-width: @tablet-width) {
-      margin: 0 0 26px 0;
+      margin: 0 0 20px 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -88,12 +89,11 @@
   }
 
   &--contacts {
-    width: ~"calc(100% - 40px)";
-    margin: 0 19px 13px 19px;
+    width: 100%;
+    margin: 0 0 13px 0;
 
     @media (min-width: @tablet-width) {
-      width: ~"calc(100% - 80px)";
-      margin: 0;
+      margin: 0 0 20px 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -110,10 +110,15 @@
         position: absolute;
         content: "";
         top: 16px;
-        right: 16px;
+        right: 15px;
         width: 19px;
         height: 14px;
         background: url("../../img/svg/email.svg") no-repeat;
+
+        @media (min-width: @tablet-width) {
+          top: 18px;
+          right: 17px;
+        }
 
         @media (min-width: @desktop-width) {
           top: 18px;
@@ -131,11 +136,16 @@
         position: absolute;
         content: "";
         top: 13px;
-        right: 16px;
+        right: 12px;
         width: 20px;
         height: 21px;
         background: url("../../img/svg/phone.svg") no-repeat;
         z-index: 5;
+
+        @media (min-width: @tablet-width) {
+          top: 15px;
+          right: 16px;
+        }
 
         @media (min-width: @desktop-width) {
           top: 15px;
@@ -220,6 +230,8 @@
     }
 
     &--phone {
+      margin: -7px 10px 0 0;
+
       @media (min-width: @tablet-width) {
         margin: -3px 17px 0 -3px;
       }
@@ -227,7 +239,7 @@
   }
 
   &--checkbox {
-    margin: 4px auto 7px 47px;
+    margin: 4px auto 7px 27px;
     padding: 0;
     box-sizing: border-box;
 
@@ -242,8 +254,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: -5px;
-      left: -59px;
+      top: -4px;
+      left: -46px;
       z-index: 1;
       width: 30px;
       height: 30px;
@@ -251,6 +263,8 @@
       box-sizing: border-box;
 
       @media (min-width: @tablet-width) {
+        top: -5px;
+        left: -59px;
         width: 40px;
         height: 40px;
       }
@@ -314,14 +328,13 @@
     @media (min-width: @tablet-width) {
       width: ~"calc(100% - 138px)";
       min-height: 174px;
-      margin: 0 67px 41px 71px;
-      padding: 9px 12px 14px 16px;
+      margin: 0 67px 41px 70px;
+      padding: 9px 12px 14px 18px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       width: ~"calc(100% - 220px)";
       margin: 0 110px 41px 110px;
-      padding: 9px 12px 14px 18px;
     }
   }
 }
@@ -334,7 +347,7 @@
 
   @media (min-width: @tablet-width) {
     height: 196px;
-    margin: 75px 0;
+    margin: 72px 0;
     padding: 30px 0;
     border: 1px solid @special-light-grey;
     box-sizing: border-box;
@@ -351,11 +364,12 @@
 .form__contacts {
   position: relative;
   width: 100%;
-  padding: 26px 0 0 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    margin: 0 0 65px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -364,6 +378,14 @@
 }
 
 .form__contacts-fields {
+  width: ~"calc(100% - 40px)";
+  margin: 0 20px 0 19px;
+
+  @media (min-width: @tablet-width) {
+    width: ~"calc(100% - 138px)";
+    margin: 0 67px 0 71px;
+  }
+
   @media (min-width: @desktop-width) {
     width: ~"calc(100% - 220px)";
     margin: 0 110px;
@@ -384,7 +406,7 @@
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 79px 0;
+    margin: 0 0 76px 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -467,7 +489,8 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 42px 0 0 0;
+    width: 100%;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -491,6 +514,9 @@
 }
 
 .form__checkbox-list {
+  width: ~"calc(100% - 40px)";
+  margin: 0 20px 0 20px;
+
   @media (min-width: @tablet-width) {
     width: ~"calc(100% - 138px)";
     margin: 0 67px 0 71px;

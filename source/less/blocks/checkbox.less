@@ -5,11 +5,16 @@
     &::after {
       position: absolute;
       content: "";
-      top: 8px;
-      left: -48px;
+      top: 5px;
+      left: -40px;
       width: 19px;
       height: 15px;
       background: url("../../img/svg/tick.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 8px;
+        left: -48px;
+      }
     }
   }
 
