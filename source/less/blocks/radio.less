@@ -1,5 +1,6 @@
 .radio__button {
-  display: none;
+  display: block;
+  visibility: hidden;
 
   &:checked {
     +.radio__label {
@@ -40,11 +41,10 @@
     padding: 5px 0;
   }
 
-  &::before,
-  &::after {
-    position: absolute;
-    border-radius: 50%;
-    content: "";
+  &:hover {
+    &::before {
+      border-color: @special-grey-4;
+    }
   }
 
   &::before {
@@ -60,5 +60,12 @@
       width: 40px;
       height: 40px;
     }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    border-radius: 50%;
+    content: "";
   }
 }
