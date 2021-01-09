@@ -1,25 +1,29 @@
 .checkbox__input {
   display: none;
 
-  &:checked+.checkbox__label {
-    &::after {
-      position: absolute;
-      content: "";
-      top: 5px;
-      left: -40px;
-      width: 19px;
-      height: 15px;
-      background: url("../../img/svg/tick.svg");
+  &:checked {
+    +.checkbox__label {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -40px;
+        width: 19px;
+        height: 15px;
+        background: url("../../img/svg/tick.svg");
 
-      @media (min-width: @tablet-width) {
-        top: 8px;
-        left: -48px;
+        @media (min-width: @tablet-width) {
+          top: 8px;
+          left: -48px;
+        }
       }
     }
   }
 
-  &:disabled+.checkbox__label {
-    opacity: 0.3;
+  &:disabled {
+    +.checkbox__label {
+      opacity: 0.3;
+    }
   }
 }
 

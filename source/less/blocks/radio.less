@@ -1,26 +1,29 @@
 .radio__button {
   display: none;
 
-  &:checked+.radio__label {
-    &::after {
-      top: 8px;
-      left: -38px;
-      width: 14px;
-      height: 14px;
-      background-color: @basic-green;
+  &:checked {
+    +.radio__label {
+      &::after {
+        top: 8px;
+        left: -38px;
+        width: 14px;
+        height: 14px;
+        background-color: @basic-green;
 
-      @media (min-width: @tablet-width) {
-        top: 11px;
-        left: -49px;
-        width: 18px;
-        height: 18px;
+        @media (min-width: @tablet-width) {
+          top: 11px;
+          left: -49px;
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }
 
-
-  &:disabled+.radio__label {
-    opacity: 0.3;
+  &:disabled {
+    +.radio__label {
+      opacity: 0.3;
+    }
   }
 }
 
