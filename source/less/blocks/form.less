@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 69px 0 72px 0;
+    margin: 66px 0 72px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,12 +153,11 @@
   }
 
   &--contacts {
-    width: ~"calc(100% - 40px)";
-    margin: 0 19px 13px 19px;
+    width: 100%;
+    margin: 0 0 13px 0;
 
     @media (min-width: @tablet-width) {
-      width: ~"calc(100% - 80px)";
-      margin: 0;
+      margin: 0 0 20px 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -175,10 +174,15 @@
         position: absolute;
         content: "";
         top: 16px;
-        right: 16px;
+        right: 15px;
         width: 19px;
         height: 14px;
         background: url("../../img/svg/email.svg") no-repeat;
+
+        @media (min-width: @tablet-width) {
+          top: 18px;
+          right: 17px;
+        }
 
         @media (min-width: @desktop-width) {
           top: 18px;
@@ -196,11 +200,16 @@
         position: absolute;
         content: "";
         top: 13px;
-        right: 16px;
+        right: 12px;
         width: 20px;
         height: 21px;
         background: url("../../img/svg/phone.svg") no-repeat;
         z-index: 5;
+
+        @media (min-width: @tablet-width) {
+          top: 15px;
+          right: 16px;
+        }
 
         @media (min-width: @desktop-width) {
           top: 15px;
@@ -343,7 +352,7 @@
   }
 
   &--checkbox {
-    margin: 4px auto 7px 47px;
+    margin: 4px auto 7px 27px;
     padding: 0;
     box-sizing: border-box;
 
@@ -358,8 +367,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: -5px;
-      left: -59px;
+      top: -4px;
+      left: -46px;
       z-index: 1;
       width: 30px;
       height: 30px;
@@ -367,6 +376,8 @@
       box-sizing: border-box;
 
       @media (min-width: @tablet-width) {
+        top: -5px;
+        left: -59px;
         width: 40px;
         height: 40px;
       }
@@ -465,10 +476,9 @@
       margin: 0 110px 41px 110px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       width: ~"calc(100% - 220px)";
       margin: 0 110px 41px 110px;
-      padding: 9px 12px 14px 18px;
     }
   }
 }
@@ -576,7 +586,7 @@
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 79px 0;
+    margin: 0 0 76px 0;
     font-size: 36px;
     line-height: 36px;
   }
