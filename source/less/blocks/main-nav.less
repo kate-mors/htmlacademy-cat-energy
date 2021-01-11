@@ -2,20 +2,24 @@
   position: relative;
 
   &--closed {
-    .main-nav__toggle::before {
-      content: "";
-      top: 0;
-      right: 0;
-      position: absolute;
-      width: 24px;
-      height: 1.5px;
-      background-color: @basic-black;
-      box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+    .main-nav__toggle {
+      &::before {
+        content: "";
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 24px;
+        height: 1.5px;
+        background-color: @basic-black;
+        box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+      }
     }
 
     .main-nav__item {
-      @media (max-width: @mobile-width-only) {
-        display: none;
+      display: none;
+
+      @media (min-width: @tablet-width) {
+        display: flex;
       }
     }
 
@@ -34,15 +38,6 @@
     }
 
     .main-nav__toggle {
-      &::before {
-        transform: rotate(45deg);
-        box-shadow: none;
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
-
       &::after,
       &::before {
         content: "";
@@ -54,9 +49,23 @@
         background-color: @basic-black;
       }
 
-      &:active::before,
-      &:active::after {
-        background-color: fade(@basic-black, 30%);
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:active {
+        &::before {
+          background-color: fade(@basic-black, 30%);
+        }
+
+        &::after {
+          background-color: fade(@basic-black, 30%);
+        }
       }
     }
   }
@@ -111,7 +120,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    height: 34px;
+    height: 32px;
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
@@ -119,6 +128,16 @@
 
   @media (min-width: @desktop-width) {
     height: 38px;
+  }
+
+  &--index {
+    @media (min-width: @tablet-width) {
+      height: 34px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 38px;
+    }
   }
 }
 
@@ -146,6 +165,14 @@
     line-height: 30px;
   }
 
+  &:last-child {
+    border-bottom: 1px solid @special-light-grey-3;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -157,6 +184,12 @@
   &--active {
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic-green;
+    }
+
+    &:last-child {
+      @media (min-width: @tablet-width) {
+        border-bottom: 2px solid @basic-green;
+      }
     }
   }
 
