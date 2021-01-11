@@ -1,0 +1,34 @@
+.checkbox__input {
+  display: block;
+  visibility: hidden;
+
+  &:checked {
+    +.checkbox__label {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -40px;
+        width: 19px;
+        height: 15px;
+        background: url("../../img/svg/tick.svg");
+
+        @media (min-width: @tablet-width) {
+          top: 8px;
+          left: -48px;
+        }
+      }
+    }
+  }
+
+  &:disabled {
+    +.checkbox__label {
+      opacity: 0.3;
+    }
+  }
+}
+
+.checkbox__label {
+  color: @basic-black;
+  cursor: pointer;
+}
