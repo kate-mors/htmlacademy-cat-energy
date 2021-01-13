@@ -37,7 +37,6 @@
     margin: 0 0 59px 60px;
     padding: 8px 36px 40px 36px;
     border: none;
-    flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,6 +60,15 @@
   &:nth-child(4n+1) {
     @media (min-width: @desktop-width) {
       margin-left: 0;
+    }
+  }
+
+
+  &:last-child {
+    border-bottom: 1px solid @special-grey-2;
+
+    @media (min-width: @tablet-width) {
+      border: none;
     }
   }
 }
