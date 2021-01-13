@@ -5,8 +5,8 @@
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(@basic-white, @basic-white 80px, @basic-grey 81px, @basic-grey 430px);
+    justify-content: flex-start;
+    background-image: linear-gradient(@basic-white, @basic-white 80px, @basic-grey 81px, @basic-grey 100%);
   }
 }
 
@@ -17,13 +17,13 @@
   object-fit: contain;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     height: 200px;
-    margin: 8px auto 0 auto;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     height: 196px;
-    margin: 0 auto;
   }
 }
 
@@ -32,13 +32,12 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: ~"calc(100% - 72px)";
-    margin: 0 36px;
+    width: 100%;
+    margin: 34px 0 33px 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 180px;
-    margin: 0 auto;
+    margin: 46px 0 34px 0;
   }
 }
 
@@ -53,7 +52,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 154px;
-    margin: 34px auto 21px auto;
+    margin: 0 auto 13px auto;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -61,7 +60,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 145px;
-    margin: 46px auto 21px auto;
+    margin: 0 auto 20px auto;
     line-height: 21px;
   }
 }
@@ -72,14 +71,19 @@
 }
 
 .catalog-item__button {
-  min-width: 100%;
   margin: 13px 0 25px 0;
   padding: 10px 44px;
   border: none;
   box-shadow: none;
 
   @media (min-width: @tablet-width) {
-    min-width: ~"calc(100% - 72px)";
-    margin: 33px 0 40px 0;
+    width: ~"calc(100% - 4px)";
+    margin: 0 2px 0 3px;
+    padding: 10px 44px 9px 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: ~"calc(100% - 6px)";
+    margin: 0 3px 0 3px;
   }
 }
