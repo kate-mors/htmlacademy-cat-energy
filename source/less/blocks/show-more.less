@@ -12,7 +12,7 @@
 .show-more__wrapper {
   position: relative;
   width: ~"calc(100% - 40px)";
-  margin: 25px 20px 25px 19px;
+  margin: 25px 20px 25px 20px;
   padding: 0;
   box-sizing: border-box;
 
@@ -97,7 +97,7 @@
 }
 
 .show-more__text {
-  margin: 0 auto;
+  margin: 0 auto 22px auto;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
@@ -112,14 +112,16 @@
 
 .show-more__button {
   width: 100%;
-  margin-top: 22px;
+  margin: 0;
+  padding: 10px 44px;
+  display: block;
+  line-height: 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: ~"calc(100% - 71px)";
     margin: 87px 36px 38px 37px;
     padding: 10px 44px;
-    line-height: 20px;
     box-sizing: border-box;
   }
 
