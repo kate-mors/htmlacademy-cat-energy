@@ -15,13 +15,9 @@
   color: @basic-white;
   background-color: @basic-green;
 
-  &:hover {
-    background-color: @special-green;
-  }
-
+  &:hover,
   &:active {
     background-color: @special-green;
-    opacity: 0.3;
   }
 
   @media (min-width: @desktop-width) {
@@ -32,13 +28,15 @@
     color: @special-dark-grey;
     background-color: @basic-grey;
 
-    &:hover {
-      background-color: @special-grey-2;
-    }
-
+    &:hover,
     &:active {
-      opacity: 0.3;
       background-color: @special-grey-2;
     }
+  }
+}
+
+.button__name {
+  &:active {
+    opacity: 0.3;
   }
 }

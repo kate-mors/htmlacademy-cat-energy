@@ -5,48 +5,57 @@
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(@basic-white, @basic-white 80px, @basic-grey 81px, @basic-grey 430px);
+    justify-content: flex-start;
+    background-image: linear-gradient(@basic-white, @basic-white 80px, @basic-grey 81px, @basic-grey 100%);
+  }
+}
+
+.catalog-item__link {
+  text-decoration: none;
+  color: @special-dark-grey-2;
+
+  &--image {
+    width: 50%;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
   }
 }
 
 .catalog-item__image {
-  width: 50%;
+  width: 100%;
   height: 112px;
-  margin: 19px 0 0 0;
+  margin: 0;
   object-fit: contain;
 
-  outline: 1px solid rgba(49, 15, 241, 0.8);
-  outline-offset: -1px;
-
   @media (min-width: @tablet-width) {
+    width: 100%;
     height: 200px;
-    margin: 8px auto 0 auto;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     height: 196px;
-    margin: 0 auto;
   }
 }
 
 .catalog-item__info {
   width: 50%;
-  margin: 19px 0 0 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: ~"calc(100% - 72px)";
-    margin: 0 36px;
+    width: 100%;
+    margin: 28px 0 33px 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 180px;
-    margin: 0 auto;
+    margin: 42px 0 32px 0;
   }
 }
 
 .catalog-item__title {
-  margin: 0 40% 18px 0;
+  margin: 0 40% 15px 0;
   font-family: @font-oswald;
   font-weight: normal;
   font-size: 16px;
@@ -56,7 +65,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 154px;
-    margin: 34px auto 21px auto;
+    margin: 0 auto 13px auto;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -64,7 +73,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 145px;
-    margin: 46px auto 21px auto;
+    margin: 0 auto 20px auto;
     line-height: 21px;
   }
 }
@@ -75,14 +84,19 @@
 }
 
 .catalog-item__button {
-  min-width: 100%;
-  margin: 13px 0 25px 0;
+  width: 100%;
+  margin: 7px 0 25px 0;
   padding: 10px 44px;
-  border: none;
   box-shadow: none;
 
   @media (min-width: @tablet-width) {
-    min-width: ~"calc(100% - 72px)";
-    margin: 33px 0 40px 0;
+    width: ~"calc(100% - 4px)";
+    margin: 0 2px 0 3px;
+    padding: 10px 44px 9px 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: ~"calc(100% - 6px)";
+    margin: 0 3px 0 3px;
   }
 }
