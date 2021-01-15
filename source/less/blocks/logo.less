@@ -1,71 +1,29 @@
-.logo__icon {
-  &--mobile {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
-  }
-
-  &--tablet {
+.logo__mobile {
+  @media (min-width: @tablet-width) {
     display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
   }
 }
 
-.logo__text {
-  &--mobile {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+.logo__tablet {
+  display: none;
 
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 
-  &--tablet {
+  @media (min-width: @desktop-width) {
     display: none;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
+.logo__desktop {
+  display: none;
 
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 
-  &--desktop {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
