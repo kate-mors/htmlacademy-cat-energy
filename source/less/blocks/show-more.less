@@ -25,13 +25,14 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: ~"calc(50% - 1px)";
     width: 30px;
     height: 30px;
     border-left: 2px solid @special-light-grey-5;
 
     @media (min-width: @tablet-width) {
       top: 52px;
+      left: 50%;
       width: 60px;
       height: 60px;
     }
@@ -46,7 +47,7 @@
     display: block;
     position: absolute;
     top: 15px;
-    left: ~"calc(50% - 15px)";
+    left: ~"calc(50% - 16px)";
     width: 30px;
     height: 30px;
     border-left: 2px solid @special-light-grey-5;
@@ -81,7 +82,7 @@
   @media (min-width: @tablet-width) {
     width: 134px;
     margin: 0;
-    padding: 162px 92px 23px 94px;
+    padding: 162px 0 23px 0;
     font-size: 20px;
     line-height: 22px;
   }

@@ -175,11 +175,11 @@
       <div class="form__top">
         <div class="form__cat-info">
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            <input class="form__input" type="text" name="cat-name" id="cat-name" pattern="[а-я]" placeholder="Барсик" required>
             <label class="form__label" for="cat-name">ИМЯ:*</label>
           </div>
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+            <input class="form__input" type="number" name="cat-weight" id="cat-weight" pattern="[1-50]" placeholder="7" required>
             <label class="form__label form__label--weight" for="cat-weight">Вес (кг):*</label>
           </div>
           <div class="form__fieldset form__fieldset--info">
@@ -214,7 +214,7 @@
             <label class="form__label form__label--contacts" for="owner-email">E-mail:* </label>
           </div>
           <div class="form__fieldset form__fieldset--contacts form__fieldset--phone">
-            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" minlength="10" required>
+            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" pattern="[0-9]{11}" required>
             <svg class="form__icon form__icon--phone" width="20" height="21" aria-label="Трубка телефона.">
               <use xlink:href="#phone-icon"></use>
             </svg>

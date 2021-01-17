@@ -286,7 +286,37 @@
       </div>
     </div>
     <div class="page-footer__map-area">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCQ3yUfUgB" width="100%" height="400" frameborder="0" allowfullscreen="true"></iframe>
+      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+        <script>
+          (function() {
+            var setting = {
+              "height": 362,
+              "width": 768,
+              "zoom": 16,
+              "queryString": "Большая Конюшенная улица, д. 19/8, Санкт-Петербург, Россия",
+              "place_id": "EmXQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRjyDRg9C70LjRhtCwLCDQtC4gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjyIwEi4KFAoSCbuIQjUOMZZGEZMu3y45kXnjEBMqFAoSCV_VYbYPMZZGETDk610Ff8zQ",
+              "satellite": false,
+              "centerCoord": [59.93874602743767, 30.323450100000002],
+              "cid": "0xfa014f3ef2246f04",
+              "lang": "ru",
+              "cityUrl": "/russia/saint-petersburg",
+              "cityAnchorText": "Карта [CITY1], Северо-Западный регион, Россия",
+              "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+              "embed_id": "354423"
+            };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=354423';
+            s.async = true;
+            s.onload = function(e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();
+        </script><a href="https://1map.com/ru/map-embed">1 Map</a>
+      </div>
     </div>
     <div class="page-footer__bottom footer-bottom">
       <a class="footer-bottom__logo">
