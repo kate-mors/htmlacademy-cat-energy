@@ -1,5 +1,5 @@
 .page-header {
-  height: @header;
+  min-height: @header;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -17,7 +17,7 @@
   }
 
   &--nojs {
-    height: @header-opened;
+    min-height: @header-opened;
 
     @media (min-width: @tablet-width) {
       height: 78px;
@@ -37,7 +37,7 @@
   @media (min-width: @tablet-width) {
     width: 173px;
     height: 52px;
-    margin: 24px auto 0 0;
+    margin: 25px auto 0 0;
     text-align: right;
   }
 
@@ -48,8 +48,12 @@
   }
 
   &--index {
+    @media (min-width: @tablet-width) {
+      margin: 22px auto 0 0;
+    }
+
     @media (min-width: @desktop-width) {
-      margin: 53px auto 0 0;
+      margin: 53px auto 0 1px;
     }
   }
 }
@@ -107,6 +111,13 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 50%;
     margin: 70px 0 0 0;
+  }
+
+  &--index {
+    @media (min-width: @tablet-width) {
+      margin: 40px 0 0 0;
+    }
   }
 }

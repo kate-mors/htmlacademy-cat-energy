@@ -33,7 +33,7 @@
   &--opened {
     .page-header {
       @media (max-width: @mobile-width-only) {
-        height: @header-opened;
+        min-height: @header-opened;
       }
     }
 
@@ -73,7 +73,7 @@
   &--nojs {
     .page-header {
       @media (max-width: @mobile-width-only) {
-        height: @header-opened;
+        min-height: @header-opened;
       }
     }
 
@@ -170,6 +170,12 @@
 
     @media (min-width: @tablet-width) {
       border: none;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: @desktop-width) {
+      margin: 0 0 0 auto;
     }
   }
 
