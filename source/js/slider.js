@@ -1,7 +1,27 @@
-var sliderList = document.querySelector('.slider__list');
-var sliderItem = document.querySelector('.slider__item');
-var sliderImage = document.querySelector('.slider__image');
+var sliderItemBefore = document.querySelector('.slider__item--before');
+var sliderItemAfter = document.querySelector('.slider__item--after');
+var sliderBeforeButton = document.querySelector('.slider__button--before');
+var sliderAfterButton = document.querySelector('.slider__button--after');
+var sliderRange = document.querySelector('.slider__range')
 
-sliderList.classList.add('slider__list--js');
-sliderItem.classList.add('slider__item--js');
-sliderImage.classList.add('slider__image--js');
+
+
+sliderAfterButton.addEventListener('click', function() {
+  if (sliderItemAfter.classList.contains('slider__item--hidden')) {
+    sliderItemAfter.classList.remove('slider__item--hidden');
+    sliderItemAfter.classList.add('slider__item--shown');
+    sliderItemBefore.classList.remove('slider__item--shown');
+    sliderItemBefore.classList.add('slider__item--hidden');
+    sliderRange.classList.add('slider__range--after');
+  }
+});
+
+sliderBeforeButton.addEventListener('click', function() {
+  if (sliderItemBefore.classList.contains('slider__item--hidden')) {
+    sliderItemBefore.classList.remove('slider__item--hidden');
+    sliderItemBefore.classList.add('slider__item--shown');
+    sliderItemAfter.classList.remove('slider__item--shown');
+    sliderItemAfter.classList.add('slider__item--hidden');
+    sliderRange.classList.remove('slider__range--after');
+  }
+});
