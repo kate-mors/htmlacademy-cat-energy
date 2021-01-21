@@ -175,11 +175,11 @@
       <div class="form__top">
         <div class="form__cat-info">
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            <input class="form__input" type="text" name="cat-name" id="cat-name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Барсик" required>
             <label class="form__label" for="cat-name">ИМЯ:*</label>
           </div>
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+            <input class="form__input" type="number" name="cat-weight" id="cat-weight" pattern="[0-9]" placeholder="7" required>
             <label class="form__label form__label--weight" for="cat-weight">Вес (кг):*</label>
           </div>
           <div class="form__fieldset form__fieldset--info">
@@ -207,14 +207,14 @@
           (владельца кота)</h2>
         <div class="form__contacts-fields">
           <div class="form__fieldset form__fieldset--contacts form__fieldset--email">
-            <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+            <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
             <svg class="form__icon form__icon--email" width="19" height="14" aria-label="Конверт.">
               <use xlink:href="#email-icon"></use>
             </svg>
             <label class="form__label form__label--contacts" for="owner-email">E-mail:* </label>
           </div>
           <div class="form__fieldset form__fieldset--contacts form__fieldset--phone">
-            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" minlength="10" required>
+            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" pattern="[0-9\s()]{11,17}" required>
             <svg class="form__icon form__icon--phone" width="20" height="21" aria-label="Трубка телефона.">
               <use xlink:href="#phone-icon"></use>
             </svg>
@@ -270,7 +270,7 @@
       </div>
     </div>
     <div class="page-footer__map-area">
-      <img class="page-footer__map" src="img/location-mobile.png" width="320" height="362" alt="Карта проезда до офиса Cat energy.">
+      <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adb566bc8004357b7f3b79d13adda1bd6e8da7aa821ab79cc5386c9307f12837b&amp;source=constructor" width="100%" height="362" frameborder="0" title="Адрес магазина Cat energy - ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </div>
     <div class="page-footer__bottom footer-bottom">
       <a class="footer-bottom__logo">

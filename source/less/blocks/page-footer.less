@@ -8,7 +8,7 @@
 }
 
 .page-footer__contacts {
-  height: 114px;
+  min-height: 114px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -39,7 +39,11 @@
 
 .page-footer__map-area {
   width: 100%;
-  min-height: 362px;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .page-footer__map {
@@ -60,5 +64,9 @@
 
   @media (min-width: @tablet-width) {
     min-height: 138px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 149px;
   }
 }

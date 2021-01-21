@@ -1,5 +1,5 @@
 .example {
-  padding: 27px 0 16px 0;
+  padding: 27px 0 15px 0;
   background-color: @special-light-grey-2;
 
   @media (min-width: @tablet-width) {
@@ -9,13 +9,13 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    padding: 60px 0 0 0;
+    padding: 0;
     background-image: linear-gradient(to bottom, @basic-white 196px, @special-light-grey-2 196px, @special-light-grey-2 100%);
   }
 }
 
 .example__title {
-  margin: 0 20px 33px 20px;
+  margin: 0 20px 35px 20px;
   font-family: @font-oswald;
   font-weight: 400;
   font-size: 36px;
@@ -29,12 +29,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px 76px 110px;
+    margin: 0 110px 77px 111px;
+    padding: 60px 0 0 0;
   }
 }
 
 .example__story {
-  margin: 0 18px 0 20px;
+  margin: 0 18px 23px 20px;
   letter-spacing: -0.12px;
 
   @media (min-width: @tablet-width) {
@@ -45,7 +46,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 436px;
-    margin: 0 890px 0 110px;
+    margin: 0 890px 0 111px;
     padding: 70px 0 0 0;
   }
 }
@@ -61,21 +62,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px 0 110px;
-    padding: 69px 0 75px 0;
+    margin: 0 110px 0 111px;
+    padding: 68px 0 75px 0;
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
 .example__data-list {
-  margin: 25px 0 0 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-  }
+  flex-wrap: wrap;
 
   @media (min-width: @desktop-width) {
     margin: 0 0 60px 0;
@@ -84,15 +82,16 @@
 
 .example__data-item {
   position: relative;
-  margin: 0 15px 0 0;
-  flex-basis: 50%;
+  width: ~"calc(50% - 15px)";
+  margin: 0 30px 20px 0;
 
   @media (min-width: @tablet-width) {
+    width: ~"calc(50% - 21px)";
     margin: 0 21px 0 0;
   }
 
-  &:last-child {
-    margin: 0 0 0 15px;
+  &:nth-child(2n) {
+    margin: 0;
 
     @media (min-width: @tablet-width) {
       margin: 0 0 0 21px;
@@ -161,7 +160,7 @@
 }
 
 .example__costs {
-  margin: 20px auto 25px auto;
+  margin: 0 auto 25px auto;
   display: flex;
   justify-content: center;
   font-family: @font-oswald;

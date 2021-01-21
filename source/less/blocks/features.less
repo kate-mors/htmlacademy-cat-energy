@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    margin: 0 110px 0 111px;
     border: none;
   }
 }
@@ -31,39 +31,30 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 71px 0 0 0;
+    padding: 0;
   }
 }
 
 .features__list {
-  margin: 35px 0 0 0;
+  margin: 38px 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    margin: 32px 30px 0 30px;
-    padding: 0 0 9px 0;
+    margin: 32px 30px 9px 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 32px 0 0 0;
+    margin: 32px 0 9px 0;
   }
 }
 
 .features__item {
-  height: 64px;
+  min-height: 64px;
   margin: 0 0 16px 0;
-
-  &:last-child {
-    margin: 0 0 41px 0;
-
-    @media (min-width: @tablet-width) {
-      margin: 0;
-    }
-  }
 
   @media (min-width: @tablet-width) {
     width: ~"calc(50% - 30px)";
@@ -111,7 +102,7 @@
 
 .features__description {
   margin: 0;
-  padding: 3px 0;
+  padding: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
