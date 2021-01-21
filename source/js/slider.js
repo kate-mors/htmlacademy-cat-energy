@@ -7,11 +7,6 @@ var sliderRange = document.querySelector('.slider__range')
 
 
 sliderAfterButton.addEventListener('click', function() {
-
-  //на 259 строке у li slider__item--after надо добавить slider__item--shown и убрать slider__item--hidden
-  //на 251 строке у li sider__item--before надо убрать slider__item--shown и добавить --hidden
-  //т добавить смещение range
-
   if (sliderItemAfter.classList.contains('slider__item--hidden')) {
     sliderItemAfter.classList.remove('slider__item--hidden');
     sliderItemAfter.classList.add('slider__item--shown');
