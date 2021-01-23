@@ -120,23 +120,24 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    height: 32px;
+    min-height: 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-content: flex-end;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    height: 38px;
+    min-height: 38px;
   }
 
   &--index {
     @media (min-width: @tablet-width) {
-      height: 34px;
+      min-height: 34px;
     }
 
     @media (min-width: @desktop-width) {
-      height: 37px;
+      min-height: 37px;
     }
   }
 }
