@@ -134,7 +134,7 @@
 
   <header class="page-header page-header--nojs">
     <div class="page-header__logo">
-      <a class="page-header__icon-logo" href="index.html">
+      <a class="page-header__icon-logo logo" href="index.html">
         <svg class="page-header__image-icon logo__mobile" width="34" height="38" aria-label="На главную страницу сайта Cat energy.">
           <use xlink:href="#icon-logo-mobile"></use>
         </svg>
@@ -145,7 +145,7 @@
           <use xlink:href="#logo-desktop"></use>
         </svg>
       </a>
-      <a class="page-header__text-logo" href="index.html">
+      <a class="page-header__text-logo logo" href="index.html">
         <svg class="page-header__image-text logo__mobile" width="101" height="18" aria-label="На главную страницу сайта Cat energy.">
           <use xlink:href="#text-logo-mobile"></use>
         </svg>
@@ -176,29 +176,29 @@
       <div class="form__top">
         <div class="form__cat-info">
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input" type="text" name="cat-name" id="cat-name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Барсик" required>
+            <input class="form__input" type="text" name="cat-name" id="cat-name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Барсик" required tabindex="1">
             <label class="form__label" for="cat-name">ИМЯ:*</label>
           </div>
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input" type="number" name="cat-weight" id="cat-weight" pattern="[0-9]" placeholder="7" required>
+            <input class="form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required tabindex="2">
             <label class="form__label form__label--weight" for="cat-weight">Вес (кг):*</label>
           </div>
           <div class="form__fieldset form__fieldset--info">
-            <input class="form__input form__input--age" type="number" name="cat-age" id="cat-age" placeholder="7">
+            <input class="form__input form__input--age" type="number" name="cat-age" id="cat-age" placeholder="7" tabindex="3">
             <label class="form__label form__label--age" for="cat-age">Возраст (лет):</label>
           </div>
         </div>
-        <div class="form__radio-labels">
+        <div class="form__radio-labels radio">
           <div class="form__fieldset form__fieldset--radio">
-            <input class="form__input radio__button" type="radio" name="program-goal" id="program-slim" value="Похудение" checked>
+            <input class="form__input radio__button" type="radio" name="program-goal" id="program-slim" value="Похудение" checked tabindex="4">
             <label class="form__label radio__label" for="program-slim">Похудение</label>
           </div>
           <div class="form__fieldset form__fieldset--radio">
-            <input class="form__input radio__button" type="radio" name="program-goal" id="program-pro" value="Набор массы">
+            <input class="form__input radio__button" type="radio" name="program-goal" id="program-pro" value="Набор массы" tabindex="5">
             <label class="form__label radio__label" for="program-pro">Набор массы</label>
           </div>
           <div class="form__fieldset form__fieldset--radio">
-            <input class="form__input radio__button" type="radio" name="program-goal" id="program-advice" value="Не знаю (Нужен ваш совет)">
+            <input class="form__input radio__button" type="radio" name="program-goal" id="program-advice" value="Не знаю (Нужен ваш совет)" tabindex="6">
             <label class="form__label radio__label" for="program-advice">Не знаю (Нужен ваш совет)</label>
           </div>
         </div>
@@ -208,14 +208,14 @@
           (владельца кота)</h2>
         <div class="form__contacts-fields">
           <div class="form__fieldset form__fieldset--contacts form__fieldset--email">
-            <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input class="form__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required tabindex="7">
             <svg class="form__icon form__icon--email" width="19" height="14" aria-label="Конверт.">
               <use xlink:href="#email-icon"></use>
             </svg>
             <label class="form__label form__label--contacts" for="owner-email">E-mail:* </label>
           </div>
           <div class="form__fieldset form__fieldset--contacts form__fieldset--phone">
-            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" pattern="[0-9\s()]{11,17}" required>
+            <input class="form__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" pattern="[0-9\s()]{11,17}" required tabindex="8">
             <svg class="form__icon form__icon--phone" width="20" height="21" aria-label="Трубка телефона.">
               <use xlink:href="#phone-icon"></use>
             </svg>
@@ -227,25 +227,25 @@
       <div class="form__comments">
         <h2 class="form__subtitle form__subtitle--comments">Комментарий</h2>
         <label class="visually-hidden" for="comments-textarea">Повадки кота.</label>
-        <textarea class="form__input form__input--textarea" id="comments-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__input form__input--textarea" id="comments-textarea" placeholder="Расскажите обо всех повадках кота" tabindex="9"></textarea>
       </div>
       <div class="form__other-products checkbox">
         <h2 class="form__subtitle form__subtitle--other-products">Дополнительно</h2>
         <div class="form__checkbox-list">
           <div class="form__fieldset form__fieldset--checkbox">
-            <input class="form__input checkbox__input" type="checkbox" id="checkbox-sugar" checked>
+            <input class="form__input checkbox__input" type="checkbox" id="checkbox-sugar" checked tabindex="10">
             <label class="form__label form__label--checkbox checkbox__label" for="checkbox-sugar">Сахарозаменитель</label>
           </div>
           <div class="form__fieldset form__fieldset--checkbox">
-            <input class="form__input checkbox__input" type="checkbox" id="checkbox-water">
+            <input class="form__input checkbox__input" type="checkbox" id="checkbox-water" tabindex="11">
             <label class="form__label form__label--checkbox checkbox__label" for="checkbox-water">Питьевая вода</label>
           </div>
           <div class="form__fieldset form__fieldset--checkbox">
-            <input class="form__input checkbox__input" type="checkbox" id="checkbox-milk">
+            <input class="form__input checkbox__input" type="checkbox" id="checkbox-milk" tabindex="12">
             <label class="form__label form__label--checkbox checkbox__label" for="checkbox-milk">Молоко</label>
           </div>
           <div class="form__fieldset form__fieldset--checkbox">
-            <input class="form__input checkbox__input" type="checkbox" id="checkbox-vitamins">
+            <input class="form__input checkbox__input" type="checkbox" id="checkbox-vitamins" tabindex="13">
             <label class="form__label form__label--checkbox checkbox__label" for="checkbox-vitamins">Витамины</label>
           </div>
         </div>
@@ -271,10 +271,10 @@
       </div>
     </div>
     <div class="page-footer__map-area">
-      <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adb566bc8004357b7f3b79d13adda1bd6e8da7aa821ab79cc5386c9307f12837b&amp;source=constructor" width="100%" height="362" frameborder="0" title="Адрес магазина Cat energy - ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adb566bc8004357b7f3b79d13adda1bd6e8da7aa821ab79cc5386c9307f12837b&amp;source=constructor" width="320" height="362" title="Адрес магазина Cat energy - ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </div>
     <div class="page-footer__bottom footer-bottom">
-      <a class="footer-bottom__logo">
+      <a class="footer-bottom__logo logo">
         <svg class="footer-bottom__text-logo logo__text" width="128" height="24" aria-label="На главную страницу сайта Cat energy.">
           <use xlink:href="#footer-logo"></use>
         </svg>
