@@ -80,15 +80,27 @@
   }
 
   &--radio {
+    width: ~"calc(100% - 20px)";
     height: 30px;
     margin: 0 20px 13px 20px;
 
     @media (min-width: @tablet-width) {
+      width: ~"calc(100% - 27px)";
       height: 40px;
       margin: 0 0 13px 27px;
     }
 
+    &:first-child {
+      margin: 22px 20px 13px 20px;
+
+      @media (min-width: @tablet-width) {
+        margin: 23px 0 13px 27px;
+      }
+    }
+
     &:last-child {
+      margin: 0 0 18px 20px;
+
       @media (min-width: @tablet-width) {
         margin: 0 0 0 27px;
       }
@@ -264,7 +276,6 @@
   text-transform: uppercase;
   border: 1px solid @special-light-grey;
   box-sizing: border-box;
-  appearance: textfield;
 
   @media (min-width: @tablet-width) {
     padding: 10px 19px 10px 18px;
@@ -291,10 +302,6 @@
     }
   }
 
-  &:invalid {
-    box-shadow: none;
-  }
-
   &:not(:placeholder-shown):invalid:required {
     outline: 2px solid @status-error;
     outline-offset: -2px;
@@ -314,8 +321,17 @@
     }
   }
 
+  &:invalid {
+    box-shadow: none;
+  }
+
   &--age {
     width: ~"calc(50% - 92px)";
+    appearance: textfield;
+  }
+
+  &--weight {
+    appearance: textfield;
   }
 
   &--textarea {
@@ -340,15 +356,13 @@
 }
 
 .form__radio-labels {
-  padding: 22px 0 5px 0;
   border-top: 1px solid @special-light-grey-4;
   border-bottom: 1px solid @special-light-grey-4;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    min-height: 196px;
+    height: 196px;
     margin: 72px 0;
-    padding: 30px 0 25px 0;
     border: 1px solid @special-light-grey;
   }
 
@@ -370,7 +384,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 69px 0 0 0;
+    margin: 48px 0 0 0;
   }
 }
 

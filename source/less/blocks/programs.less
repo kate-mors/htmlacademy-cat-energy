@@ -1,5 +1,13 @@
 .programs {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: -5px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .programs__list {
@@ -12,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px 0 111px;
+    margin: 0 110px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;

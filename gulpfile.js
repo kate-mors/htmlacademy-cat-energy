@@ -33,6 +33,14 @@ const styles = () => {
 
 exports.styles = styles;
 
+//HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+}
+
 //Images
 
 const images = () => {
@@ -67,14 +75,6 @@ const sprite = () => {
 }
 
 exports.sprite = sprite;
-
-//HTML
-
-const html = () => {
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
-}
 
 // Scripts
 
