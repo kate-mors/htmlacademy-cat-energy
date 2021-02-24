@@ -38,51 +38,29 @@
 }
 
 .page-footer__map-area {
+  position: relative;
   width: 100%;
   height: 362px;
-  background-image: url("../img/raster/index/map-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/raster/index/map-mobile-2x.webp");
-  }
 
   @media (min-width: @tablet-width) {
     height: 400px;
-    background-image: url("../img/raster/index/map-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/raster/index/map-tablet-2x.jpg");
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/raster/index/map-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/raster/index/map-desktop-2x.jpg");
-    }
   }
 }
 
 .page-footer__map {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 362px;
-  object-fit: cover;
+  height: 100%;
   outline: 0;
   border: none;
+}
 
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
+.page-footer__map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .page-footer__bottom {

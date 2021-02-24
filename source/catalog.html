@@ -499,8 +499,15 @@
           Санкт-Петербург</p>
       </div>
     </div>
-    <div class="page-footer__map-area">
-      <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adb566bc8004357b7f3b79d13adda1bd6e8da7aa821ab79cc5386c9307f12837b&amp;source=constructor" width="320" height="362" title="Адрес магазина Cat energy - ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <div class="page-footer__map-area" id="map">
+      <picture class="page-footer__map">
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/raster/index/map-desktop.webp 1x, img/raster/index/map-desktop-2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/raster/index/map-tablet.webp 1x, img/raster/index/map-tablet-2x.webp 2x">
+        <source type="image/webp" srcset="img/raster/index/map-mobile.webp 1x, img/raster/index/map-mobile-2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/raster/index/map-desktop.jpg 1x, img/raster/index/map-desktop-2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/raster/index/map-tablet.jpg 1x, img/raster/index/map-tablet-2x.jpg 2x">
+        <img class="page-footer__map-image" src="img/raster/index/map-mobile.jpg" srcset="img/raster/index/map-mobile-2x.jpg 2x" width="320" height="362" alt="Адрес: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </picture>
     </div>
     <div class="page-footer__bottom footer-bottom">
       <a class="footer-bottom__logo logo">
@@ -541,6 +548,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e58e65a3-0ff8-4076-83e1-efab10997075&lang=ru_RU"></script>
   <script src="js/script.min.js"></script>
 </body>
 
