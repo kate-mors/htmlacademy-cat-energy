@@ -1,4 +1,4 @@
-# «Cat energy» [![Build status][travis-image]][travis-url]
+# «Cat energy»
 
 * Student: [Katerina Ponomareva](https://up.htmlacademy.ru/adaptive/21/user/929085).
 * Mentor: Мария Наг.
