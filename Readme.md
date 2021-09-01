@@ -8,10 +8,10 @@
 * Methodology - HTML semantic, components, BEM
 * Preprocessors and Automation - Less & Sass, fonts, variables, mixins, Node.js overview, Gulp overview
 * Responsive web design - Grid Layout and Flexible Boxes
-* Responsive decorative elements - 'micro' layout with grid and flexbox
+* Responsive elements - 'micro' layout with grid and flexbox
 * Responsive graphics - 'retinized' images
 * Vector graphics and optimization - SVG usage options, raster graphics optimization, WebP and AVIF images
-* Dive into automation - minification, optimisation
+* Dive into automation with Gulp - minification, optimisation
 * Web layout performance - performance hierarchies, fonts opimisation, Lighthouse analytics
 ---
 
