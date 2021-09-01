@@ -1,7 +1,7 @@
 {
-  "name": "cat-energy-21",
+  "name": "pro-loco",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Cultural associazion web-page",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
